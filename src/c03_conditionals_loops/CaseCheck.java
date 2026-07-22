@@ -1,4 +1,6 @@
 //Alphabet Case Check
+// Check the character is Uppercase / lowercase?
+
 package c03_conditionals_loops;
 
 import java.util.Scanner;
