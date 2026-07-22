@@ -1,4 +1,5 @@
 //To find out whether the given String is Palindrome or not.
+
 package c02_basics;
 
 import java.util.Scanner;
