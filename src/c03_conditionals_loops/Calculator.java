@@ -39,7 +39,7 @@ public class Calculator {
 					}
 				}
 
-				System.out.println(ans);
+				System.out.println("The calculation is: "+ ans);
 
 			} else if (op == 'x' || op == 'X') {
 				break;
