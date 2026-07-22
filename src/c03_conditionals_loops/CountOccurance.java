@@ -11,7 +11,7 @@ public class CountOccurance {
 		int count = 0;
 		int rem;
 
-		// Only frequency of the number :-
+//      Only frequency of the number :-
 //		while ( n>0) {
 //			rem=n%10 ; // last digit 
 //			n=n/10;
@@ -28,7 +28,7 @@ public class CountOccurance {
 			n=n/10;
 		}
 
-		System.out.println("the frequency is " + count);
+		System.out.println("The frequency is " + count);
 	}
 
 }
