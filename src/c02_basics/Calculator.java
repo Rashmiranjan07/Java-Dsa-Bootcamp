@@ -1,3 +1,5 @@
+//Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+
 package c02_basics;
 
 import java.util.Scanner;
