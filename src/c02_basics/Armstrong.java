@@ -30,7 +30,6 @@ public class Armstrong {
 			temp = original;
 
 			// Calculate Armstrong sum
-
 			while (temp > 0) {
 				int digit = temp % 10;
 				sum += Math.pow(digit, digits);
