@@ -16,7 +16,6 @@ public class SumNum {
 		}
 
 		System.out.println("The sum of total taken integer:" + sum);
-
 	}
 
 }
