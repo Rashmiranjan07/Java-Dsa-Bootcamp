@@ -45,4 +45,22 @@ class Rectangle{
 		System.out.println("Area of Rectangle = " + area);
 	}
 }
+
+class IsoscelesTriangle{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Enter the equal side (a): ");
+        double a = sc.nextDouble();
+
+        System.out.print("Enter the base (b): ");
+        double b = sc.nextDouble();
+
+        double h = Math.sqrt((a * a) - ((b * b) / 4));
+        double area = (b * h) / 2;
+
+        System.out.println("Height = " + h);
+        System.out.println("Area of Isosceles Triangle = " + area);
+	}
+}
  
