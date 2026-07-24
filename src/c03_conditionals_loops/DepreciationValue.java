@@ -16,6 +16,7 @@ public class DepreciationValue {
 
 		double depreciationAmount = (originalValue * depreciationPercent) / 100;
 
+		
 		double finalValue = originalValue - depreciationAmount;
 
 		System.out.println("Depreciation Amount = " + depreciationAmount);
