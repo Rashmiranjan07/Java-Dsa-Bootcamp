@@ -22,5 +22,4 @@ public class PerfectNum {
 			System.out.println("It is not a perfect number");
 		}
 	}
-
 }
