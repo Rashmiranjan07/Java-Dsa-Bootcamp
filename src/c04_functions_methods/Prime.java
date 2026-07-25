@@ -1,3 +1,5 @@
+//Define a method to find out if a number is prime or not.
+
 package c04_functions_methods;
 
 import java.util.Scanner;
