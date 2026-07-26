@@ -34,7 +34,6 @@ public class MaxItem {
 	}
 
 	static int isMax(int[] arr) {
-
 		// work on edge cases
 		if (arr.length == 0) {
 			return -1;
