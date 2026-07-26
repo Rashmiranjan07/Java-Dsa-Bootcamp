@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class MaxItem {
 	public static void main(String[] args) {
 		int[] arr = { 1, 3, 23, 9, 18 };
-
 		System.out.println("the maximum value is " + isMax(arr));
 
 	}
