@@ -1,3 +1,5 @@
+//Find the max item inside an array 
+
 package c05_arrays;
 
 import java.util.Arrays;
