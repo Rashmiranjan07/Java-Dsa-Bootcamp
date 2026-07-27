@@ -6,11 +6,15 @@ Example 1:
 Input: nums = [1,2,3,1,1,3]
 Output: 4
 Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.
+hint :- Count how many times each number appears.
+ If a number appears n times, then n * (n – 1) // 2 good pairs can be made with this number.
  */
-
 
 package c05_arrays;
 
 public class NumOfGoodPair {
+	public static void main(String[] args) {
+		
+	}
 
 }
