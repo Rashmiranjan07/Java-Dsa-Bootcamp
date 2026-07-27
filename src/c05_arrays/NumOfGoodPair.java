@@ -14,12 +14,24 @@ package c05_arrays;
 
 public class NumOfGoodPair {
 	public static void main(String[] args) {
+		int[] nums = { 1, 2, 3, 1, 1, 3 };
+
+		int result = numIdenticalPairs(nums);
+		System.out.println("the numbers of pairs:" + result);
 
 	}
 
-	public int numIdenticalPairs(int[] nums) {
-		return 0;
+	public static int numIdenticalPairs(int[] nums) {
+		int n = nums.length;
+		int count = 0;
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = i + 1; j < nums.length; j++) {
+				if (nums[i] == nums[j]) {
+					count++;
+				}
+			}
 
-		
+		}
+		return count;
 	}
 }
