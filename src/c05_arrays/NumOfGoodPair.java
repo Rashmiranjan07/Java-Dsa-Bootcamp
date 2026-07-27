@@ -20,5 +20,6 @@ public class NumOfGoodPair {
 	public int numIdenticalPairs(int[] nums) {
 		return 0;
 
+		
 	}
 }
