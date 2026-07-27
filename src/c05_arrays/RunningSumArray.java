@@ -1,6 +1,6 @@
 //Running sum of 1D Array
 // input - [1,2,3,4]
-// output - [1,3,6,10]
+// output - [1,3,6,10]   
 
 
 package c05_arrays;
