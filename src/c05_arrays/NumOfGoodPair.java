@@ -14,7 +14,11 @@ package c05_arrays;
 
 public class NumOfGoodPair {
 	public static void main(String[] args) {
-		
+
 	}
 
+	public int numIdenticalPairs(int[] nums) {
+		return 0;
+
+	}
 }
