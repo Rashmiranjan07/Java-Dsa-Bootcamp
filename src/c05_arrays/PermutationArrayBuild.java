@@ -19,7 +19,6 @@ public class PermutationArrayBuild {
 		for (int i = 0; i < n; i++) {
 			ans[i] = nums[nums[i]]; // a new array contains the nums[nums[i]] 
 		}
-
 		return ans;
 	}
 
