@@ -17,9 +17,16 @@ Input: mat = [[1,1,1,1],
 Output: 8
  */
 
-
 package c05_arrays;
 
 public class MatrixDiagonalSum {
+	public static void main(String[] args) {
+
+	}
+
+	public int diagonalSum(int[][] mat) {
+		return 0;
+
+	}
 
 }
