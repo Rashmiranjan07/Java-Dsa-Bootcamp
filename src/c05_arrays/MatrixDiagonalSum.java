@@ -19,13 +19,32 @@ Output: 8
 
 package c05_arrays;
 
+import java.util.Arrays;
+
 public class MatrixDiagonalSum {
 	public static void main(String[] args) {
+
+		int[][] mat = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		MatrixDiagonalSum obj = new MatrixDiagonalSum();
+		int result = obj.diagonalSum(mat);
+		System.out.println(result);
 
 	}
 
 	public int diagonalSum(int[][] mat) {
-		return 0;
+		int n = mat.length;
+		int sum = 0;
+
+		for (int i = 0; i < n; i++) {
+			// primary diagonal
+			sum += mat[i][i];
+
+			// secondary diagonal
+			if (i != n - 1 - i) {
+				sum += mat[i][n - 1 - i];
+			}
+		}
+		return sum;
 
 	}
 
