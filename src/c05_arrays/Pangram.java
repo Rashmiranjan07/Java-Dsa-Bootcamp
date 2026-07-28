@@ -14,6 +14,11 @@ package c05_arrays;
 
 public class Pangram {
 	public static void main(String[] args) {
+		String sentence = "thequickbrownfoxjumpsoverthelazydog";
+
+		Pangram obj = new Pangram();
+		boolean result = obj.checkIfPangram(sentence);
+		System.out.println(result);
 
 	}
 
