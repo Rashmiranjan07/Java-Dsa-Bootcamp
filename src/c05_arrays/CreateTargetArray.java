@@ -46,9 +46,7 @@ public class CreateTargetArray {
 		for (int i = 0; i < target.size(); i++) {
 			result[i] = target.get(i);
 		}
-
 		return result;
-
 	}
 
 }
