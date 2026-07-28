@@ -29,9 +29,9 @@ public class SmallerNumber {
 	public int[] smallerNumbersThanCurrent(int[] nums) {
 		int n = nums.length;
 		int[] ans = new int[n];
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) { // this loop for pick one number
 			int count = 0;
-			for (int j = 0; j < n; j++) {
+			for (int j = 0; j < n; j++) { //compare with other numbers
 				if (nums[j] < nums[i]) {
 					count++;
 				}
