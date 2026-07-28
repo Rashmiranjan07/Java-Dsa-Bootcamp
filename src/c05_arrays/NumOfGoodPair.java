@@ -30,7 +30,6 @@ public class NumOfGoodPair {
 					count++;
 				}
 			}
-
 		}
 		return count;
 	}
