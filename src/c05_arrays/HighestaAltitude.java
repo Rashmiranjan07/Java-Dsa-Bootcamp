@@ -11,13 +11,29 @@ Explanation: The altitudes are [0,-5,-4,1,1,-6]. The highest is 1.
 
 package c05_arrays;
 
+import java.util.Arrays;
+
 public class HighestaAltitude {
 	public static void main(String[] args) {
+		int[] gain = { -5, 1, 5, 0, -7 };
 
+		HighestaAltitude obj = new HighestaAltitude();
+		int result = obj.largestAltitude(gain);
+		System.out.println(result);
 	}
 
 	public int largestAltitude(int[] gain) {
-		return 0;
+		int highestAltitude = 0;
+		int currentAltitude = 0;
+		int n = gain.length;
+		for (int i = 0; i < n; i++) {
+			currentAltitude += gain[i];
 
+			if (currentAltitude > highestAltitude) {
+				highestAltitude = currentAltitude;
+			}
+		}
+
+		return highestAltitude;
 	}
 }
