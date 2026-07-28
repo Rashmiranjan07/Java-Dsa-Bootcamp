@@ -14,7 +14,8 @@ package c05_arrays;
 
 public class Pangram {
 	public static void main(String[] args) {
-		String sentence = "thequickbrownfoxjumpsoverthelazydog";
+		 String sentence = "thequickbrownfoxjumpsoverthelazydog";
+		//String sentence = "abcdefghijklmnopqrstuvwxyz";
 
 		Pangram obj = new Pangram();
 		boolean result = obj.checkIfPangram(sentence);
@@ -23,8 +24,26 @@ public class Pangram {
 	}
 
 	public boolean checkIfPangram(String sentence) {
-		return false;
+		if (sentence == null || sentence.length() < 26) {
+			return false;
+		}
 
+		boolean[] visited = new boolean[26];
+		int Count = 0;
+
+		for (int i = 0; i < sentence.length(); i++) {
+			char ch = sentence.charAt(i);
+
+			if (ch >= 'a' && ch <= 'z') {
+				int index = ch - 'a';
+
+				if (!visited[index]) {
+					visited[index] = true;
+					Count++;
+				}
+			}
+		}
+
+		return Count == 26;
 	}
-
 }
