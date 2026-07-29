@@ -13,21 +13,34 @@ Explanation:
 Therefore only 12 and 7896 contain an even number of digits.
  */
 
-
 package c05_arrays;
 
 public class EvenNumberDigits {
 	public static void main(String[] args) {
-		int[] nums= {12,345,2,6,7896};
-		EvenNumberDigits obj=new EvenNumberDigits();
-		int result=obj.findNumbers(nums);
+		int[] nums = { 12, 345, 2, 6, 7896 };
+		EvenNumberDigits obj = new EvenNumberDigits();
+		int result = obj.findNumbers(nums);
 		System.out.println(result);
 	}
-	 public int findNumbers(int[] nums) {
-		 
-		 
-		return 0;
-	        
-	    }
+
+	public int findNumbers(int[] nums) {
+		int n = nums.length;
+		int maxCount = 0;
+		for (int i = 0; i < n; i++) {
+			int num = nums[i];
+			int count = 0;
+			while (num != 0) {
+				count++;
+				num = num / 10;
+			}
+
+			if (count % 2 == 0) {
+				maxCount++;
+			}
+		}
+
+		return maxCount;
+
+	}
 
 }
