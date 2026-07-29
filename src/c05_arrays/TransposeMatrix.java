@@ -13,6 +13,11 @@ package c05_arrays;
 
 public class TransposeMatrix {
 	public static void main(String[] args) {
+		
+		TransposeMatrix obj = new TransposeMatrix();
+		int [][]result = obj.transpose(null)
+		System.out.println(result);
+
 
 	}
 
