@@ -13,35 +13,37 @@ package c05_arrays;
 
 public class TransposeMatrix {
 	public static void main(String[] args) {
+		 int[][] matrix = {
+	                {1, 2, 3},
+	                {4, 5, 6},
+	                {7, 8, 9}
+	        };
+			TransposeMatrix obj = new TransposeMatrix();
+			int[][] result = obj.transpose(matrix);
 
-		TransposeMatrix obj = new TransposeMatrix();
-		int[][] result = obj.transpose(null);
-		System.out.println(result);
-		
-		for (int i = 0; i < cols; i++) {
-			for (int j = 0; j < rows; j++) {
-				System.out.print(transpose[i][j] + " ");
+			for (int i = 0; i < result.length; i++) {
+				for (int j = 0; j < result[0].length; j++) {
+					System.out.print(result[i][j] + " ");
+				}
+				System.out.println();
 			}
-			System.out.println();
+
+		}
+
+		public int[][] transpose(int[][] matrix) {
+			int rows = matrix.length;
+			int cols = matrix[0].length;
+
+			int[][] transpose = new int[cols][rows];
+
+			for (int i = 0; i < rows; i++) {
+				for (int j = 0; j < cols; j++) {
+					transpose[j][i] = matrix[i][j];
+				}
+			}
+
+			return transpose;
+
 		}
 
 	}
-
-	public int[][] transpose(int[][] matrix) {
-		int rows = matrix.length;
-		int cols = matrix[0].length;
-
-		int[][] transpose = new int[cols][rows];
-
-		for (int i = 0; i < rows; i++) {
-			for (int j = 0; j < cols; j++) {
-				transpose[j][i] = matrix[i][j];
-			}
-		}
-		
-
-		return transpose;
-
-	}
-
-}
