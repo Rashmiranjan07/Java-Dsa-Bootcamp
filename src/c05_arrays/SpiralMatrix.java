@@ -69,7 +69,7 @@ public class SpiralMatrix {
 			}
 		}
 
-		return null;
+		return result;
 
 	}
 
