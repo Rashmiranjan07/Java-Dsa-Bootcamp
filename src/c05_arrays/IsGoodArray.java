@@ -19,9 +19,17 @@ Explanation: Pick numbers 29, 6 and 10.
 
 package c05_arrays;
 
+import java.util.Scanner;
+
 public class IsGoodArray {
 	public static void main(String[] args) {
+		int[] nums = { 12, 5, 7, 23 };
 
+		if (isGoodArray(nums)) {
+			System.out.println("Good Array");
+		} else {
+			System.out.println("Not a Good Array");
+		}
 	}
 
 	public boolean isGoodArray(int[] nums) {
