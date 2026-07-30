@@ -1,11 +1,7 @@
 /* check if it's a good array or not ?
  *-------------------------------------
- *Given an array nums of positive integers. Your task is to select some subset of nums, multiply each element by an integer and add all these numbers. The array is said to be good if you can obtain a sum of 1 from the array by any possible subset and multiplicand.
-
+Given an array nums of positive integers. Your task is to select some subset of nums, multiply each element by an integer and add all these numbers. The array is said to be good if you can obtain a sum of 1 from the array by any possible subset and multiplicand.
 Return True if the array is good otherwise return False.
-
- 
-
 Example 1:
 
 Input: nums = [12,5,7,23]
@@ -20,8 +16,6 @@ Explanation: Pick numbers 29, 6 and 10.
 29*1 + 6*(-3) + 10*(-1) = 1
 
  */
-
-
 
 package c05_arrays;
 
