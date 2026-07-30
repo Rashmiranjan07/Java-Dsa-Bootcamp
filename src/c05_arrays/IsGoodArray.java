@@ -19,10 +19,10 @@ Explanation: Pick numbers 29, 6 and 10.
 
 package c05_arrays;
 
-import java.util.Scanner;
-
 public class IsGoodArray {
+
 	public static void main(String[] args) {
+
 		int[] nums = { 12, 5, 7, 23 };
 
 		if (isGoodArray(nums)) {
@@ -32,9 +32,30 @@ public class IsGoodArray {
 		}
 	}
 
-	public boolean isGoodArray(int[] nums) {
-		return false;
+	public static boolean isGoodArray(int[] nums) {
 
+		int gcd = nums[0];
+
+		for (int i = 1; i < nums.length; i++) {
+
+			gcd = findGCD(gcd, nums[i]);
+
+			if (gcd == 1) {
+				return true;
+			}
+		}
+
+		return gcd == 1;
 	}
 
+	public static int findGCD(int a, int b) {
+
+		while (b != 0) {
+			int temp = b;
+			b = a % b;
+			a = temp;
+		}
+
+		return a;
+	}
 }
