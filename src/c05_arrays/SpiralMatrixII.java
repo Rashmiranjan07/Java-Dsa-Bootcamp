@@ -20,7 +20,6 @@ public class SpiralMatrixII {
 				           { 4, 5, 6 }, 
 				           { 7, 8, 9 } 
 				           };
-
 		SpiralMatrix obj = new SpiralMatrix();
 		List<Integer> result = obj.spiralOrder(matrix);
 		System.out.println(result);
