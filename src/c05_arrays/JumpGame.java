@@ -17,8 +17,10 @@ package c05_arrays;
 
 public class JumpGame {
 	public static void main(String[] args) {
-		int [] nums= {2,3,1,1,4};
-		
+		int[] nums = { 2, 3, 1, 1, 4 };
+		JumpGame obj = new JumpGame();
+		boolean result = obj.canJump(nums);
+		System.out.println(result);
 
 	}
 
