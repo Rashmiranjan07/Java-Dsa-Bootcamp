@@ -1,3 +1,5 @@
+/* Linear Search */
+
 package c05_searching.linear_search;
 
 public class Main {
@@ -14,6 +16,7 @@ public class Main {
 		if (arr.length == 0) {
 			return -1;
 		}
+		
 
 		// run a for loop
 		for (int element : arr) {
