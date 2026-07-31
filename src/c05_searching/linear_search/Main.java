@@ -2,6 +2,9 @@
 
 package c05_searching.linear_search;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 class Main {
 	public static void main(String[] args) {
 		int[] nums = { 23, 45, 1, 2, 8, 19, -3, 16, -11, 28 };
@@ -58,13 +61,20 @@ class Main {
 class SearchInString {
 	public static void main(String[] args) {
 		String name = "kunal";
-		char target = 'c';
-		System.out.println(search(name, target));
+		char target = 'u';
+		// System.out.println(search(name, target));
+		System.out.println(Arrays.toString(name.toCharArray()));
 	}
 
-	static boolean search(String str, char target) {
+	static boolean search2(String str, char target) {
 		if (str.length() == 0) {
 			return false;
+		}
+
+		for (char ch : str.toCharArray()) {
+			if (ch == target) {
+				return true;
+			}
 		}
 
 		for (int i = 0; i < str.length(); i++) {
