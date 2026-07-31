@@ -2,7 +2,7 @@
 
 package c05_searching.linear_search;
 
-public class Main {
+class Main {
 	public static void main(String[] args) {
 		int[] nums = { 23, 45, 1, 2, 8, 19, -3, 16, -11, 28 };
 		int target = 19;
@@ -16,7 +16,6 @@ public class Main {
 		if (arr.length == 0) {
 			return -1;
 		}
-		
 
 		// run a for loop
 		for (int element : arr) {
@@ -54,4 +53,27 @@ public class Main {
 
 	}
 
+}
+
+class SearchInString {
+	public static void main(String[] args) {
+		String name = "kunal";
+		char target = 'c';
+		System.out.println(search(name, target));
+	}
+
+	static boolean search(String str, char target) {
+		if (str.length() == 0) {
+			return false;
+		}
+
+		for (int i = 0; i < str.length(); i++) {
+			if (target == str.charAt(i)) {
+				return true;
+			}
+		}
+
+		return false;
+
+	}
 }
