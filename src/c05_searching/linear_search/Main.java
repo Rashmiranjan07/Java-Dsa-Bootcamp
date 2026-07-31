@@ -87,3 +87,16 @@ class SearchInString {
 
 	}
 }
+
+/* search in a range 
+ * arr=[18,12,-7,3,14,28]
+ * 
+ * Search for 3' in the range of index[1 & 4]
+ * 
+*/
+class SearchRange{
+	public static void main(String[] args) {
+		
+	}
+	
+}
