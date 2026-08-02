@@ -31,7 +31,7 @@ public class SubtractProductAndSum {
 		int rem = 0;
 		int sum = 0;
 		int sub = 0;
-		int product = 0;
+		int product = 1;
 
 		while (n > 0) {
 			rem = n % 10;
