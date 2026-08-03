@@ -9,7 +9,7 @@ public class Transpose {
 		Transpose obj = new Transpose();
 		int[][] result = obj.transpose(matrix);
 
-		// print 
+		// print the transpose matrix
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result[0].length; j++) {
 				System.out.print(result[i][j] + " ");
