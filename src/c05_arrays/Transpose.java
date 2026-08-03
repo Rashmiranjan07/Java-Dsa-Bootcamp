@@ -6,6 +6,7 @@ public class Transpose {
 	}
 
 	public int[][] transpose(int[][] matrix) {
+		return matrix;
 
 	}
 
