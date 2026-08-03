@@ -42,9 +42,7 @@ public class Transpose {
 				newMatrix[j][i] = matrix[i][j];
 			}
 		}
-
 		return newMatrix;
-
 	}
 
 }
