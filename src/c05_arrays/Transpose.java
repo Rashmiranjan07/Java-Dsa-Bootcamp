@@ -3,7 +3,6 @@
  
  */
 
-
 package c05_arrays;
 
 import java.util.Arrays;
@@ -25,12 +24,14 @@ public class Transpose {
 	}
 
 	public int[][] transpose(int[][] matrix) {
+		
+		int rows = matrix.length;
+		int cols = matrix[0].length;
 
-		int left = matrix.length;
-		int right = matrix[0].length;
-		int[][] newMatrix = new int[left][right];
-		for (int i = 0; i < left; i++) {
-			for (int j = 0; j < right; j++) {
+		int[][] newMatrix = new int[cols][rows];
+
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
 				newMatrix[j][i] = matrix[i][j];
 			}
 		}
