@@ -1,4 +1,7 @@
-
+/* Transpose matrix 
+ * ----------------
+ 
+ */
 
 
 package c05_arrays;
