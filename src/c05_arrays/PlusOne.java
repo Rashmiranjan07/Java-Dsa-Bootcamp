@@ -29,7 +29,6 @@ public class PlusOne {
 		PlusOne obj = new PlusOne();
 		int[] result = obj.plusOne(digits);
 		System.out.println(Arrays.toString(result));
-
 	}
 
 	public int[] plusOne(int[] digits) {
