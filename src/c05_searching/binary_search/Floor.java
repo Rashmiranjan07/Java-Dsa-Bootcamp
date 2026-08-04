@@ -1,22 +1,22 @@
 /* Floor Program
  * -------------
  Floor program - find the greatest element which smaller than or equal to the =< target element 
- 
+        int arr[] = { 2, 3, 5, 9, 14, 16, 18 };
+		int target = 15;
  */
-
-
 
 package c05_searching.binary_search;
 
 public class Floor {
 	public static void main(String[] args) {
 		int arr[] = { 2, 3, 5, 9, 14, 16, 18 };
-		int target = 15;
+		int target = 19;
 		int ans = isFloor(arr, target);
 		System.out.println(ans);
 
 	}
-
+     
+	//return the index of greatest number <= target
 	static int isFloor(int arr[], int target) {
 
 		// but what if the target is greater than the greatest number in the array
