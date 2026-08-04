@@ -1,7 +1,12 @@
 /* Ceiling program 
  * ---------------
  * Ceiling : smallest element in array greater or equal = target 
- 
+ * Ex:-
+        int arr[] = { 2, 3, 5, 9, 14, 16, 18 };
+		int target = 15;
+		output = 5 
+		Explanation :- (16) is the smallest element in array whcih is greater than or equal to target 
+		
  */
 
 package c05_searching.binary_search;
