@@ -1,6 +1,6 @@
 /* Floor Program
  * -------------
- 
+ Floor program - find the greatest element which smaller than or equal to the =< target element 
  
  */
 
