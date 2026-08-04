@@ -1,4 +1,8 @@
-
+/* Ceiling program 
+ * ---------------
+ * Ceiling : smallest element in array greater or equal = target 
+ 
+ */
 
 
 package c05_searching.binary_search;
