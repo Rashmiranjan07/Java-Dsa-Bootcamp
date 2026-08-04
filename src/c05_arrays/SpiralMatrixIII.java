@@ -1,8 +1,23 @@
 package c05_arrays;
 
+import java.util.Arrays;
+
 public class SpiralMatrixIII {
 	public static void main(String[] args) {
+		SpiralMatrixIII obj = new SpiralMatrixIII();
+		Solution sol = obj.new Solution();
 
+		int rows = 5;
+		int cols = 6;
+		int rStart = 1;
+		int cStart = 4;
+
+		int[][] result = sol.spiralMatrixIII(rows, cols, rStart, cStart);
+
+		System.out.println("Spiral Traversal:");
+		for (int[] cell : result) {
+			System.out.println(Arrays.toString(cell));
+		}
 	}
 
 	class Solution {
