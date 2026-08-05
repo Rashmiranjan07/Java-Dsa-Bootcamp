@@ -23,7 +23,7 @@ public class InfiniteArray {
 
 		// conditon for the target to lie in the range
 		while (target > arr[end]) {
-			int temp = end + 1; // this si new start
+			int temp = end + 1; // this is new start
 
 			// double the box value
 			// end = previous end + sizeOfBox*2;
