@@ -19,11 +19,15 @@ Output: [-1,-1]
 package c05_searching.binary_search;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class FirstAndLastPositionOfElement {
 	public static void main(String[] args) {
 		int[] nums = { 5, 7, 7, 8, 8, 10 };
 		int target = 8;
+		FirstAndLastPositionOfElement obj = new FirstAndLastPositionOfElement();
+		int[] result = obj.searchRange(nums, target);
+		System.out.println(Arrays.toString(result));
 
 	}
 
