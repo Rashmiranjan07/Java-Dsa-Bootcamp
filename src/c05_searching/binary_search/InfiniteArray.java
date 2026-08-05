@@ -1,3 +1,9 @@
+/* Find Position of an element in a Sorted array of infinite 
+ * ---------------------------------------------------------
+
+ */
+
+
 package c05_searching.binary_search;
 
 public class InfiniteArray {
