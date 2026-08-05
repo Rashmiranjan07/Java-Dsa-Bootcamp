@@ -1,7 +1,17 @@
+/* 852. Peak index in a mountian array 
+ * -----------------------------------
+
+ */
+
+
 package c05_searching.binary_search;
 
 public class PeakIndexInMountainArray {
 	public static void main(String[] args) {
+		int[] arr = { 0, 1,2,3,2,1, 0 };
+		PeakIndexInMountainArray obj = new PeakIndexInMountainArray();
+		int result = obj.peakIndexInMountainArray(arr);
+		System.out.println(result);
 
 	}
 
@@ -22,11 +32,11 @@ public class PeakIndexInMountainArray {
 			}
 
 		}
-
 // in the end , start == end and pointing to the largest number because of the  2 checks above 
 // start and end are always trying to find max element in the above 2 checks
 // hence, when they are pointing to just one element, that is the max one because that is ehats the checks say
-// more elaboration : at every point of time for start and end , they have the best possible answer till that time & if we are saying that only one item is remaining , hence cuz of above  line is the best possible ans     
+// more elaboration : at every point of time for start and end , they have the best possible answer till that time & if we are saying that only one item is remaining , hence cuz of above  line is the best possible ans 
+		return start; // return end .. both is equal bcoz that is the peak
 	}
 
 }
