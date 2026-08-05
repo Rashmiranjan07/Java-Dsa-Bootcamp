@@ -15,6 +15,7 @@ Output: 1
 Example 3:
 Input: arr = [0,10,5,2]
 Output: 1
+
  */
 
 package c05_searching.binary_search;
