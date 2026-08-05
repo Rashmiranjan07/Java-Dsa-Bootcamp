@@ -24,7 +24,7 @@ package c05_searching.binary_search;
 public class NextGreatestNumber {
 	public static void main(String[] args) {
 		char[] letters = { 'c', 'f', 'j' };
-		char target = 'c';
+		char target = 'a';
 		NextGreatestNumber obj = new NextGreatestNumber();
 		char result = obj.nextGreatestLetter(letters, target);
 		System.out.println(result);
