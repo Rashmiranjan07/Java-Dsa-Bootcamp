@@ -3,32 +3,32 @@
 
  */
 
-
 package c05_searching.binary_search;
 
 public class InfiniteArray {
 	public static void main(String[] args) {
-		
+
 	}
-	
-	static int ans(int[]arr, int target) {
+
+	static int ans(int[] arr, int target) {
 		// first find the range
 		// first start with a box of size 2
-		int start =0;
-		int end=1;
-		
-		//conditon for the target to lie in the range 
-		while(target > arr[end]) {
-			int newStart=end+1;
-			
-			//double the box value 
-			//end = previous end + sizeOfBox*2;
-			end=end+ ( end -start+1) *2;
+		int start = 0;
+		int end = 1;
+
+		// conditon for the target to lie in the range
+		while (target > arr[end]) {
+			int temp = end + 1;
+
+			// double the box value
+			// end = previous end + sizeOfBox*2;
+			end = end + (end - start + 1) * 2;
+			start = temp;
 		}
 	}
 
 	static int binarySearch(int[] arr, int target, int start, int end) {
-		
+
 		while (start <= end) {
 
 			int mid = start + (end - start) / 2;
