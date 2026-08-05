@@ -1,3 +1,9 @@
+/* Find the first and last element of a sorted array
+ * -------------------------------------------------
+ 
+ */
+
+
 package c05_searching.binary_search;
 
 public class FirstAndLastPositionOfElement {
