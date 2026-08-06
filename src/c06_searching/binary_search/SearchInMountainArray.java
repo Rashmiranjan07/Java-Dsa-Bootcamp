@@ -1,6 +1,6 @@
 /*1095. Find in Mountain Array ( hard)
- * -----------------------------------
- * (This problem is an interactive problem.)
+  -----------------------------------
+  (This problem is an interactive problem.)
 You may recall that an array arr is a mountain array if and only if:
 arr.length >= 3
 There exists some i with 0 < i < arr.length - 1 such that:
