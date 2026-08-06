@@ -1,5 +1,5 @@
 /* Floor Program
- * -------------
+  ---------------
  Floor program - find the greatest element which smaller than or equal to the =< target element 
         int arr[] = { 2, 3, 5, 9, 14, 16, 18 };
 		int target = 15;
