@@ -1,3 +1,5 @@
+// Binary search 
+
 package c06_searching.binary_search;
 
 public class Main {
