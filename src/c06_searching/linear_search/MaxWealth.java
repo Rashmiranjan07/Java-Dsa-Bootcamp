@@ -1,6 +1,9 @@
-package c06_searching.linear_search;
+/* Richest customer wealth 
+ * -----------------------
+ //https://leetcode.com/problems/richest-customer-wealth/
+ */
 
-//https://leetcode.com/problems/richest-customer-wealth/
+package c06_searching.linear_search;
 
 public class MaxWealth {
 	public static void main(String[] args) {
