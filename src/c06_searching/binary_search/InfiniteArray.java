@@ -1,5 +1,5 @@
 /* Find Position of an element in a Sorted array of infinite 
- * ---------------------------------------------------------
+ -----------------------------------------------------------
 Amazon interview question 
  from GFG 
  */
