@@ -1,4 +1,4 @@
-/* Linear Search practice*/
+/* Linear Search practice */
 
 package c06_searching.linear_search;
 
