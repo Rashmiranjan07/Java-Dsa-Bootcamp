@@ -1,5 +1,5 @@
 /* Ceiling program 
- * ---------------
+ ------------------
  * Ceiling : smallest element in array greater or equal = target 
  * Ex:-
         int arr[] = { 2, 3, 5, 9, 14, 16, 18 };
