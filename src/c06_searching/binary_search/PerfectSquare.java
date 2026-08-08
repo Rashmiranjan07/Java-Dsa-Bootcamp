@@ -1,4 +1,5 @@
-/* 367. Valid perfect square :-
+/* 367. Valid perfect square 
+  ---------------------------
 
  */
 
