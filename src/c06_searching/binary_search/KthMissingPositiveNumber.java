@@ -28,7 +28,7 @@ public class KthMissingPositiveNumber {
 
 	public int findKthPositive(int[] arr, int k) {
 		int start = 0;
-		int end = arr.length;
+		int end = arr.length-1;
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
 			int missing = arr[mid] - (mid + 1); // Because indexes start from 0, but positive numbers start from 1
