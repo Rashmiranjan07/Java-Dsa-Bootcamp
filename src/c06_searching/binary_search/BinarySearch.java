@@ -20,8 +20,11 @@ package c06_searching.binary_search;
 
 public class BinarySearch {
 	public static void main(String[] args) {
-		int [] nums = {-1,0,3,5,9,12};
+		int[] nums = { -1, 0, 3, 5, 9, 12 };
 		int target = 9;
+		BinarySearch obj = new BinarySearch();
+		int result = obj.search(nums, target);
+		System.out.println(result);
 
 	}
 
