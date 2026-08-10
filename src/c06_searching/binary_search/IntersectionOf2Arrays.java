@@ -62,7 +62,7 @@ public class IntersectionOf2Arrays {
 			} else if (arr[mid] < target) {
 				start = mid + 1;
 			} else {
-				end = mid = 1;
+				end = mid - 1;
 			}
 
 		}
