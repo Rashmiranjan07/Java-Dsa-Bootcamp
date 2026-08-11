@@ -18,7 +18,11 @@ package c06_searching.binary_search;
 
 public class RotatedBinarySearchII {
 	public static void main(String[] args) {
-		
+
+	}
+
+	public boolean search(int[] nums, int target) {
+
 	}
 
 }
