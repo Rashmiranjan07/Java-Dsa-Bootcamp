@@ -11,7 +11,6 @@ Example 2:
 
 Input: grid = [[3,2],[1,0]]
 Output: 0
-
  */
 
 package c06_searching.binary_search;
