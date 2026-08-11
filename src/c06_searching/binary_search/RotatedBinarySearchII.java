@@ -39,7 +39,7 @@ public class RotatedBinarySearchII {
 			}
 			// edge cases
 			/*
-			 * mid] == nums[end], we cannot determine which side is sorted. So safely remove
+			 * [mid] == nums[end], we cannot determine which side is sorted. So safely remove
 			 * duplicates from both sides.
 			 */
 			if (nums[start] == nums[mid] && nums[mid] == nums[end]) {
