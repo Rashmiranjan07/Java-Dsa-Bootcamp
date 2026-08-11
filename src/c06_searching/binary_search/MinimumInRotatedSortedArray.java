@@ -24,16 +24,70 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 
  */
 
-
 package c06_searching.binary_search;
 
 public class MinimumInRotatedSortedArray {
 	public static void main(String[] args) {
+		int[] nums = { 4, 5, 6, 7, 1, 2 };
+		MinimumInRotatedSortedArray obj = new MinimumInRotatedSortedArray();
+		int result = obj.findMin(nums);
+		System.out.println(result);
 
 	}
 
+// Another and easiest way 
 	public int findMin(int[] nums) {
 
-	}
+		int start = 0;
+		int end = nums.length - 1;
 
+		while (start < end) {
+
+			int mid = start + (end - start) / 2;
+
+			if (nums[mid] > nums[end]) {
+				// Minimum is on the right
+				start = mid + 1;
+			} else {
+				// Minimum is at mid or on the left
+				end = mid;
+			}
+		}
+
+		return nums[start];
+	}
 }
+
+// this method helps by finding pivot 
+
+//	public int findMin(int[] nums) {
+//		int pivot = findPivot(nums);
+//		if (pivot == -1) {
+//			// Array is not rotated
+//			return nums[0];
+//		}
+//
+//		return nums[pivot + 1];
+//
+//	}
+//
+//	static int findPivot(int[] nums) {
+//
+//		int start = 0;
+//		int end = nums.length - 1;
+//		while (start <= end) {
+//			int mid = start + (end - start) / 2;
+//			if (mid < end && nums[mid] > nums[mid + 1]) {
+//				return mid;
+//			}
+//			if (mid > start && nums[mid] < nums[mid - 1]) {
+//				return mid - 1;
+//			}
+//			if (nums[mid] <= nums[start]) {
+//				end = mid - 1;
+//			} else {
+//				start = mid + 1;
+//			}
+//		}
+//		return -1;
+//	}
