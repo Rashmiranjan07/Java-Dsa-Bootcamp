@@ -35,7 +35,7 @@ public class MinimumInRotatedSortedArray {
 
 	}
 
-// Another and easiest way 
+// Another and easiest way & simple binary Search
 	public int findMin(int[] nums) {
 
 		int start = 0;
