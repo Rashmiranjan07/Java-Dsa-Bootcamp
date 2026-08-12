@@ -36,15 +36,12 @@ public class FindMedianSortedArrays {
 		for (int i = 0; i < nums1.length; i++) {
 			result[i] = nums1[i];
 		}
-
 		for (int i = 0; i < nums2.length; i++) {
 			result[nums1.length + i] = nums2[i];
 		}
 
 		Arrays.sort(result);
-
 		int n = result.length;
-
 		double median;
 
 		if (n % 2 == 1) {
@@ -52,9 +49,7 @@ public class FindMedianSortedArrays {
 		} else {
 			median = (result[n / 2 - 1] + result[n / 2]) / 2.0;
 		}
-
 		return median;
-
 	}
 
 }
