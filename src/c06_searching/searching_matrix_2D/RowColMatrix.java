@@ -1,3 +1,5 @@
+//Matrix is sorted in a row wise or column wise manner 
+
 package c06_searching.searching_matrix_2D;
 
 import java.util.Arrays;
