@@ -19,6 +19,7 @@ public class RowColMatrix {
 				c--;
 			}
 		}
+		return new int[] { -1, -1 };
 	}
 
 }
