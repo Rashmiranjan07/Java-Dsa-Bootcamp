@@ -1,5 +1,7 @@
 package c06_searching.searching_matrix_2D;
 
+import java.util.Arrays;
+
 public class RowColMatrix {
 	public static void main(String[] args) {
 		int[][] matrix = { 
@@ -9,6 +11,7 @@ public class RowColMatrix {
 				{ 33, 34, 38, 50 }
 		};
 		int target = 37;
+		System.out.println(Arrays.toString(search(matrix, target)));
 
 	}
 
