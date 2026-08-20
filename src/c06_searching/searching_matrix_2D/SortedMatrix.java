@@ -1,5 +1,5 @@
-
-
+//Strictly followed sorted matrix/2D arrays :-
+// to reduce the search complexity 
 
 package c06_searching.searching_matrix_2D;
 
