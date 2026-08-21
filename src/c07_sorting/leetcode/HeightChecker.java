@@ -49,7 +49,7 @@ public class HeightChecker {
 
 		// Bubble sort expected array
 		for (int i = 0; i < expected.length - 1; i++) {
-			for (int j = 0; j < expected.length - 1 - i; j++) {
+			for (int j = 1; j < expected.length - 1 - i; j++) {
 
 				if (expected[j] > expected[j + 1]) {
 					int temp = expected[j];
