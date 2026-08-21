@@ -14,7 +14,6 @@ Output: false
 Explanation: There is no way to reorder the elements to obtain an arithmetic progression.
  */
 
-
 package c07_sorting.leetcode;
 
 public class ArithmeticProgression {
