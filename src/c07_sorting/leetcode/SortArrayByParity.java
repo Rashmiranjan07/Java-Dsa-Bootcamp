@@ -87,9 +87,12 @@ public class SortArrayByParity {
 	}
 }
 
-// even in this question we do not needed the sorting 
-// we can simply add the even numbers first and odd numbers last 
+
+
 /*
+ * even in this question we do not needed the sorting we can simply add the even
+ * numbers first and odd numbers last
+ * 
  * public static int[] sortArrayByParity(int[] nums) {
  * 
  * int index = 0;
