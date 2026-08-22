@@ -1,4 +1,4 @@
-/* 977.Squares of Sorted arrya ( easy)
+/* 977.Squares of Sorted array ( easy)
  *---------------------------------------
 Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
 Example 1:
