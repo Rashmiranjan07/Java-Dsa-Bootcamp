@@ -24,7 +24,7 @@ package c07_sorting.leetcode;
 
 public class MissingElementII {
 	public static void main(String[] args) {
-		int arr[] = { 0, 1 };
+		int arr[] = { 0, 1, 3 };
 		MissingElementII obj = new MissingElementII();
 		int result = obj.missingNumber(arr);
 		System.out.println(result);
@@ -33,14 +33,22 @@ public class MissingElementII {
 	public int missingNumber(int[] arr) {
 		int i = 0;
 		while (i < arr.length) {
-			int correct = arr[i] - 1; // correct index= value-1;
-			if (arr[i] != arr[correct]) {
+			int correct = arr[i];
+			;
+			if (arr[i] < arr.length && arr[i] != arr[correct]) {
 				swap(arr, i, correct);
 			} else {
 				i++;
 			}
 		}
-		return;
+		for (int j = 0; j < arr.length; j++) {
+			if (arr[j] != j) {
+				return j;
+			}
+		}
+
+		return arr.length;
+
 	}
 
 	static void swap(int[] arr, int first, int second) {
@@ -53,9 +61,8 @@ public class MissingElementII {
 }
 
 /*
- * This Question in from amazon interview . lets think how can we solve this
- * question using Cycle Sort Cycle sort defines that we can use it 1-n . we can
- * sort first and every index contains that number if any index doesnot contain
- * that value i.e the mising number
- * 
+ * This Question in from amazon interview . lets think how can we solve thisquestion using Cycle Sort 
+ * Cycle sort defines that we can use it 1-n .
+ * case 1 :- we can sort first and every index contains that number if any index doesnot containthat value i.e the mising number
+ * case 2 :- if every index containn that number then return "n" 
  */
