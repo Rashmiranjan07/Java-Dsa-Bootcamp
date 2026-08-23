@@ -41,9 +41,9 @@ public class FindDuplicateII {
 		}
 		int element = nums[0];
 
-		for (int j = 0; j < nums.length; j++) {
-			if (nums[j] == nums[j + 1]) {
-				element = nums[j];
+		for (int index = 0; index < nums.length; index++) {
+			if (nums[index] == nums[index + 1]) {
+				element = nums[index];
 			}
 		}
 
