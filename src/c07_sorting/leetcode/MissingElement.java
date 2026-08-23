@@ -20,12 +20,11 @@ Output: 8
 
  */
 
-
 package c07_sorting.leetcode;
 
 public class MissingElement {
 	public static void main(String[] args) {
-		int nums[] = { 0,1 };
+		int nums[] = { 0, 1 };
 		MissingElement obj = new MissingElement();
 		int result = obj.missingNumber(nums);
 		System.out.println(result);
@@ -59,3 +58,10 @@ public class MissingElement {
 	}
 
 }
+
+/*
+ * Moreover if we want to find out the missing number and we know it stats from
+ * 0' then we do not need to sort it , we can simple appraocch the formula od
+ * n*(n+1)/ 2 for expectedSum and then find the actualSum and substract both and
+ * find the answer .
+ */
