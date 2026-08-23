@@ -11,9 +11,6 @@ public class CycleSort {
 		System.out.println(Arrays.toString(arr));
 	}
 
-	// starts with i and move it its correct index/position
-	// check - swap - move
-
 	static void cycleSort(int[] arr) {
 		// starts with i and move it its correct index/position
 		// check - swap - move
