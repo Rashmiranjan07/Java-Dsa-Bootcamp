@@ -1,4 +1,4 @@
-/*268. Missing Number (easy) ( amazon )
+/*268. Missing Number (easy) (amazon)
  * -------------------------------------
 Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
 
@@ -63,5 +63,5 @@ public class MissingElementII {
  * This Question in from amazon interview . lets think how can we solve thisquestion using Cycle Sort 
  * Cycle sort defines that we can use it 1-n .
  * case 1 :- we can sort first and every index contains that number if any index doesnot containthat value i.e the mising number
- * case 2 :- if every index containn that number then return "n" 
+ * case 2 :- if every index contain that number then return "n" 
  */
