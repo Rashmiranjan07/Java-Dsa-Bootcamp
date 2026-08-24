@@ -29,7 +29,7 @@ package c07_sorting.leetcode;
 
 public class MaximumProductOfThree {
 	public static void main(String[] args) {
-		int[] nums = { -1,-2,-3};
+		int[] nums = {1,2,3,4};
 		MaximumProductOfThree obj = new MaximumProductOfThree();
 		int result = obj.maximumProduct(nums);
 		System.out.println(result);
