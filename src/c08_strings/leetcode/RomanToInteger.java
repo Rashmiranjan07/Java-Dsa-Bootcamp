@@ -34,7 +34,6 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
  */
 
-
 package c08_strings.leetcode;
 
 public class RomanToInteger {
@@ -43,7 +42,6 @@ public class RomanToInteger {
 		RomanToInteger obj = new RomanToInteger();
 		int result = obj.romanToInt(s);
 		System.out.println(result);
-
 	}
 
 	public int romanToInt(String s) {
