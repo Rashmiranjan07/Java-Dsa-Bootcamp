@@ -23,13 +23,11 @@ The only three numbers are -1, -2, and -3, so the maximum product is (-1) * (-2)
 
  */
 
-
-
 package c07_sorting.leetcode;
 
 public class MaximumProductOfThree {
 	public static void main(String[] args) {
-		int[] nums = {1,2,3,4};
+		int[] nums = { 1, 2, 3, 4 };
 		MaximumProductOfThree obj = new MaximumProductOfThree();
 		int result = obj.maximumProduct(nums);
 		System.out.println(result);
@@ -46,13 +44,10 @@ public class MaximumProductOfThree {
 			}
 		}
 		int n = arr.length;
-		int product = 1;
-		for (int index = n - 1; index >= n - 3; index--) {
-			product *= arr[index];
 
-		}
-
-		return product;
+		int product1 = arr[n - 1] * arr[n - 2] * arr[n - 3];
+		int product2 = arr[0] * arr[1] * arr[n - 1];
+		return Math.max(product1, product2);
 	}
 
 	static void swap(int[] arr, int first, int second) {
@@ -60,5 +55,4 @@ public class MaximumProductOfThree {
 		arr[first] = arr[second];
 		arr[second] = temp;
 	}
-
 }
