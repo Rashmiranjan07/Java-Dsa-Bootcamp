@@ -23,7 +23,7 @@ package c08_strings.leetcode;
 
 public class LengthOfLastWord {
 	public static void main(String[] args) {
-		String s = "   fly me   to   the moon  ";
+		String s = "   fly me   to   the moon ";
 		LengthOfLastWord obj = new LengthOfLastWord();
 		int result = obj.lengthOfLastWord(s);
 		System.out.println(result);
