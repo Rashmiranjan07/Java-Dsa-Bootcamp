@@ -34,9 +34,6 @@ public class HalvesAreAlike {
 		String first = s.substring(0, mid);
 		String second = s.substring(mid);
 
-		boolean firstVowel = false;
-		boolean secondVowel = false;
-
 		int count1 = 0;
 		int count2 = 0;
 
@@ -44,7 +41,7 @@ public class HalvesAreAlike {
 			char ch = first.charAt(i);
 
 			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-				firstVowel = true;
+
 				count1++;
 			}
 		}
@@ -53,18 +50,12 @@ public class HalvesAreAlike {
 			char ch = second.charAt(i);
 
 			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
-				secondVowel = true;
+
 				count2++;
 			}
 		}
 
-		if (firstVowel && secondVowel) {
-			if (count1 == count2) {
-				return true;
-			}
-		}
-
-		return false;
+		return count1 == count2;
 
 	}
 
