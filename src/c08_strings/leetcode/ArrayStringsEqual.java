@@ -33,10 +33,18 @@ public class ArrayStringsEqual {
 
 	public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
 
-		String result1 = word1[0] + word1[1];
-		String result2 = word2[0] + word2[1];
+		StringBuilder result1 = new StringBuilder();
+		StringBuilder result2 = new StringBuilder();
 
-		return result1.equals(result2);
+		for (String s : word1) {
+			result1.append(s);
+		}
+
+		for (String s : word2) {
+			result2.append(s);
+		}
+
+		return result1.toString().equals(result2.toString());
 
 	}
 
