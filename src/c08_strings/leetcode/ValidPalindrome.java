@@ -30,7 +30,6 @@ public class ValidPalindrome {
 		ValidPalindrome obj = new ValidPalindrome();
 		boolean result = obj.isPalindrome(str);
 		System.out.println(result);
-
 	}
 
 	public boolean isPalindrome(String str) {
