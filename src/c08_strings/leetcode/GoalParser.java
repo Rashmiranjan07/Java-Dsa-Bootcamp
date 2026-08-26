@@ -34,7 +34,6 @@ public class GoalParser {
 	}
 
 	public String interpret(String command) {
-
 		return command.replace("()", "o") //1. Replace () with o:
 				.replace("(", "") // 2. remove (
 				.replace(")", ""); // 3. remove )
