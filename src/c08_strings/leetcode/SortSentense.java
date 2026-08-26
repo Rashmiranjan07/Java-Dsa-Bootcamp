@@ -14,7 +14,6 @@ Example 2:
 Input: s = "Myself2 Me1 I4 and3"
 Output: "Me Myself and I"
 Explanation: Sort the words in s to their original positions "Me1 Myself2 and3 I4", then remove the numbers.
- 
  */
 
 package c08_strings.leetcode;
