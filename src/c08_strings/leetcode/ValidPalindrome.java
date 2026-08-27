@@ -21,7 +21,6 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
  */
 
-
 package c08_strings.leetcode;
 
 public class ValidPalindrome {
@@ -36,17 +35,36 @@ public class ValidPalindrome {
 		if (str == null || str.length() == 0) {
 			return true;
 		}
+
 		str = str.toLowerCase();
-		for (int i = 0; i <= str.length() / 2; i++) {
-			char start = str.charAt(i);
-			char end = str.charAt(str.length() - 1 - i);
+
+		int left = 0;
+		int right = str.length() - 1;
+
+		while (left < right) {
+
+			if (!Character.isLetterOrDigit(str.charAt(left))) {
+				left++;
+				continue;
+			}
+
+			if (!Character.isLetterOrDigit(str.charAt(right))) {
+				right--;
+				continue;
+			}
+
+			char start = str.charAt(left);
+			char end = str.charAt(right);
 
 			if (start != end) {
 				return false;
 			}
-		}
-		return true;
 
+			left++;
+			right--;
+		}
+
+		return true;
 	}
 
 }
