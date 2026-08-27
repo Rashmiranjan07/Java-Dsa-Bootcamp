@@ -18,6 +18,7 @@ Input: sequence = "ababc", word = "ac"
 Output: 0
 Explanation: "ac" is not a substring in "ababc". 
  
+ 
  */
 
 package c08_strings.leetcode;
