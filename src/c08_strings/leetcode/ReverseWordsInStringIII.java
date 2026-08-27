@@ -39,8 +39,6 @@ public class ReverseWordsInStringIII {
 				result.append(" ");
 			}
 		}
-
 		return result.toString();
 	}
-
 }
