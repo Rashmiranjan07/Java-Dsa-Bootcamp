@@ -29,11 +29,13 @@ public class FindStrInStr {
 
 	public int strStr(String haystack, String needle) {
 
-		if (haystack.contains(needle)) {
-			return 0;
-		}
+//		if (haystack.contains(needle)) {
+//			return 0;
+//		}
+//
+//		return -1;
 
-		return -1;
+		return haystack.indexOf(needle);
 
 	}
 
