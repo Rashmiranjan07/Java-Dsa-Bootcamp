@@ -21,7 +21,8 @@ public class Pattern {
 //		pattern15(5);
 //		pattern17(5);
 //		pattern18(5);
-		pattern19(9);
+//		pattern19(9);
+		pattern21(5);
 
 	}
 
@@ -412,4 +413,20 @@ public class Pattern {
 
 	}
 
+	static void pattern21(int n) {
+		int k = 1;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+
+				if (i >= j)
+					System.out.print(k++ + " ");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	
+	
+	
 }
