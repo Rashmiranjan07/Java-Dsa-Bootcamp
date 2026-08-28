@@ -27,9 +27,11 @@ public class Pattern {
 //		pattern24(8);
 //		pattern28(8);
 //		pattern26(5);
-//		pattern30(5)
-		pattern31(4);
-
+//		pattern30(5);
+//		pattern31(4);
+//		pattern32(5);
+//		pattern33(5);
+//		pattern34(5);
 	}
 
 	static void pattern1(int n) {
@@ -503,16 +505,47 @@ public class Pattern {
 	}
 
 	static void pattern31(int n) {
-		for (int i = 0; i < 2 * n - 1; i++) {
-			for (int j = 0; j < 2 * n - 1; j++) {
-				int top = i;
-				int left = j;
-				int bottom = 2 * n - 2 - i;
-				int right = 2 * n - 2 - j;
+		for (int i = 0; i < n; i++) {
+			for (int j = n - i - 1; j < n; j++) {
+				System.out.print((char) ('A' + j) + " ");
+			}
+			System.out.println();
+		}
+	}
 
-				int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+	static void pattern32(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = n - i - 1; j < n; j++) {
+				System.out.print((char) ('A' + j) + " ");
+			}
 
-				System.out.print((n - min) + " ");
+			System.out.println();
+		}
+	}
+
+	static void pattern33(int n) {
+		char ch = 'a';
+
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j <= i; j++) {
+				if (ch >= 'a' && ch <= 'z') {
+					if ((ch - 'a') % 2 == 0)
+						System.out.print(ch + " ");
+					else
+						System.out.print(Character.toUpperCase(ch) + " ");
+
+					ch++;
+				}
+			}
+
+			System.out.println();
+		}
+	}
+
+	static void pattern34(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = n - i - 1; j >= 0; j--) {
+				System.out.print((char) ('A' + j) + " ");
 			}
 
 			System.out.println();
