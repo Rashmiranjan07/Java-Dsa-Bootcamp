@@ -49,7 +49,7 @@ public class OrderlyQueue {
 		for (int i = 1; i < s.length(); i++) {
 			String rotation = s.substring(i) + s.substring(0, i);
 
-			if (rotation.compareTo(ans) < 0) {
+			if (rotation.compareTo(ans) < 0) { // If rotation is alphabetically smaller than ans, update ans.
 				ans = rotation;
 			}
 		}
