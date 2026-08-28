@@ -19,7 +19,9 @@ public class Pattern {
 //		pattern13(5);
 //		pattern14(5);
 //		pattern15(5);
-		pattern17(5);
+//		pattern17(5);
+//		pattern18(5);
+		pattern19(9);
 
 	}
 
@@ -340,4 +342,74 @@ public class Pattern {
 			System.out.println();
 		}
 	}
+
+	static void pattern18(int n) {
+
+		// Upper half
+		for (int i = 0; i < n; i++) {
+
+			// Left spaces
+			for (int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+
+			// Left stars
+			for (int j = 0; j < n - i; j++) {
+				System.out.print("*");
+			}
+
+			// Middle spaces
+			for (int j = 0; j < 2 * i; j++) {
+				System.out.print(" ");
+			}
+
+			// Right stars
+			for (int j = 0; j < n - i; j++) {
+				System.out.print("*");
+			}
+
+			System.out.println();
+		}
+
+		// Lower half
+		for (int i = n - 1; i >= 0; i--) {
+
+			// Left spaces
+			for (int j = 0; j < i; j++) {
+				System.out.print(" ");
+			}
+
+			// Left stars
+			for (int j = 0; j < n - i; j++) {
+				System.out.print("*");
+			}
+
+			// Middle spaces
+			for (int j = 0; j < 2 * i; j++) {
+				System.out.print(" ");
+			}
+
+			// Right stars
+			for (int j = 0; j < n - i; j++) {
+				System.out.print("*");
+			}
+
+			System.out.println();
+		}
+	}
+
+	static void pattern19(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+
+				if ((i >= j && i + j <= n - 1) || (i <= j && i + j >= n - 1))
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+
+	}
+
 }
