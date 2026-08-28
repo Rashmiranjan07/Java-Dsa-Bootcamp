@@ -35,7 +35,6 @@ public class SentenseSimillarityIII {
 		SentenseSimillarityIII obj = new SentenseSimillarityIII();
 		boolean result = obj.areSentencesSimilar(sentence1, sentence2);
 		System.out.println(result);
-
 	}
 
 	public boolean areSentencesSimilar(String sentence1, String sentence2) {
