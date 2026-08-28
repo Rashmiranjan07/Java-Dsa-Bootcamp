@@ -22,7 +22,13 @@ public class Pattern {
 //		pattern17(5);
 //		pattern18(5);
 //		pattern19(9);
-		pattern21(5);
+//		pattern21(5);
+//		pattern22(5);
+//		pattern24(8);
+//		pattern28(8);
+//		pattern26(5);
+//		pattern30(5)
+		pattern31(4);
 
 	}
 
@@ -415,6 +421,7 @@ public class Pattern {
 
 	static void pattern21(int n) {
 		int k = 1;
+
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 
@@ -426,7 +433,90 @@ public class Pattern {
 			System.out.println();
 		}
 	}
-	
-	
-	
+
+	static void pattern22(int n) {
+
+		for (int i = 1; i <= n; i++) {
+
+			for (int j = 1; j <= i; j++) {
+
+				if ((i + j) % 2 == 0) {
+					System.out.print("1 ");
+				} else {
+					System.out.print("0 ");
+				}
+			}
+
+			System.out.println();
+		}
+	}
+
+	static void pattern24(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if (j == 0 || j == n - 1 || j == Math.min(i, n - 1 - i) || j == n - 1 - Math.min(i, n - 1 - i))
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+
+	static void pattern28(int n) {
+		for (int row = 0; row < 2 * n; row++) {
+			int totalColsInRow = row > n ? 2 * n - row : row;
+
+			int noOfSpaces = n - totalColsInRow;
+			for (int s = 0; s < noOfSpaces; s++) {
+				System.out.print(" ");
+			}
+
+			for (int col = 0; col < totalColsInRow; col++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+	static void pattern26(int n) {
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n - i + 1; j++) {
+				System.out.print(i + " ");
+			}
+
+			System.out.println();
+		}
+	}
+
+	static void pattern30(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+
+				if ((i >= j && i + j <= n - 1) || (i <= j && i + j >= n - 1))
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+
+	static void pattern31(int n) {
+		for (int i = 0; i < 2 * n - 1; i++) {
+			for (int j = 0; j < 2 * n - 1; j++) {
+				int top = i;
+				int left = j;
+				int bottom = 2 * n - 2 - i;
+				int right = 2 * n - 2 - j;
+
+				int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+
+				System.out.print((n - min) + " ");
+			}
+
+			System.out.println();
+		}
+	}
+
 }
