@@ -14,7 +14,6 @@ Output: 2
  
  */
 
-
 package c08_strings.leetcode;
 
 public class RepeatedStringMatch {
