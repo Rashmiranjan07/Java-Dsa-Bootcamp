@@ -12,17 +12,17 @@ public class MultiplyStrings {
 
 	public String multiply(String num1, String num2) {
 
-		if (num1.equals("0") || num2.equals("0")) {
+		if (num1.equals("0") || num2.equals("0")) {  // if any "0" contains then return "0"
 			return "0";
 		}
 
-		int[] result = new int[num1.length() + num2.length()];
+		int[] result = new int[num1.length() + num2.length()]; // the size of an result array
 
-		for (int i = num1.length() - 1; i >= 0; i--) {
-			for (int j = num2.length() - 1; j >= 0; j--) {
+		for (int i = num1.length() - 1; i >= 0; i--) { // go into num1 strings..
+			for (int j = num2.length() - 1; j >= 0; j--) { // go into num2 strings..
 
-				int a = num1.charAt(i) - '0';
-				int b = num2.charAt(j) - '0';
+				int a = num1.charAt(i) - '0'; // convert to char
+				int b = num2.charAt(j) - '0'; // convert to  char
 
 				int pos = i + j + 1;
 
