@@ -1,3 +1,9 @@
+/* Factroial 
+ * --------
+ (GFG) https://www.geeksforgeeks.org/problems/factorial5739/1
+ 
+ */
+
 package c12_math.questions;
 
 public class Factorial {
