@@ -12,6 +12,6 @@ public class ResetIthBit {
 
 	static int resetBit(int n, int i) {
 
-		return n & ~(1 << (i - 1));
+		return n & ~(1 << (i - 1)); // reset ith bit 
 	}
 }
