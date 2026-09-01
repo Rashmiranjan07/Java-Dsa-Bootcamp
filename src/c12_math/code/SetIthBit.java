@@ -8,13 +8,13 @@ public class SetIthBit {
 		int i = 4; // 4th bit
 
 		// 0--->1
-		// 1--->0
+		// 1--->0 
 
 		System.out.println(toggleBit(n, i));
 	}
 
 	static int toggleBit(int n, int i) {
 
-		return n ^ (1 << (i - 1));
+		return n ^ (1 << (i - 1)); // set ith bit 
 	}
 }
