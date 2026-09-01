@@ -10,3 +10,4 @@ public class FindEvenorOdd {
 		return (n & 1) == 1; // bcoz if all the numbers & 1 that gives the same number
 	}
 }
+
