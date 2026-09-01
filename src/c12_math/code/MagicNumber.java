@@ -5,6 +5,7 @@
 // 4=100=125
 // 5=101=130
 
+
 package c12_math.code;
 
 public class MagicNumber {
