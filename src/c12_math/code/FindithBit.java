@@ -8,6 +8,6 @@ public class FindithBit {
 	}
 
 	static int findBit(int n, int i) {
-		return (n & (1 << (i - 1))) != 0 ? 1 : 0;
+		return (n & (1 << (i - 1))) != 0 ? 1 : 0; // find the ith bit 
 	}
 }
