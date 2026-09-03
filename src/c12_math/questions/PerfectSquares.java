@@ -1,8 +1,16 @@
+/*
+
+ */
+
+
 package c12_math.questions;
 
 public class PerfectSquares {
 	public static void main(String[] args) {
 		int n = 12;
+		PerfectSquares obj = new PerfectSquares();
+		int result = obj.numSquares(n);
+		System.out.println(result);
 	}
 
 	public int numSquares(int n) {
