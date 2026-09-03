@@ -10,7 +10,7 @@ package c12_math.code;
 
 public class Modulo {
 	public static void main(String[] args) {
-		
-	}
 
+	}
+// will be covered in advanced DSA course 
 }
