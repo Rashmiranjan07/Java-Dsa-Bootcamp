@@ -2,7 +2,7 @@ package c10_recursion.easy;
 
 public class Nto1 {
 	public static void main(String[] args) {
-		funBoth(5);
+		fun(5);
 	}
 
 	// concept
@@ -20,7 +20,7 @@ public class Nto1 {
 		if (n == 0) {
 			return;
 		}
-		System.out.println(n);
+		System.out.println(n); // 5,4,3,2,1
 		fun(n - 1);
 	}
 
@@ -29,7 +29,7 @@ public class Nto1 {
 			return;
 		}
 		funRev(n - 1);
-		System.out.println(n);
+		System.out.println(n); // 1,2,3,4,5
 	}
 
 	static void funBoth(int n) {
