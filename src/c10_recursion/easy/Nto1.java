@@ -1,8 +1,10 @@
+// N to 1 :- 
+
 package c10_recursion.easy;
 
 public class Nto1 {
 	public static void main(String[] args) {
-		fun(5);
+		funBoth(5);
 	}
 
 	// concept
