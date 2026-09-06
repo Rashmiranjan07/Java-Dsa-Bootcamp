@@ -1,8 +1,13 @@
 package c13_Bitwise;
 
+import java.util.Arrays;
+
 public class SetMissmatch {
 	public static void main(String[] args) {
-
+		int[] arr = { 1, 2, 2, 4 };
+		SetMissmatch obj = new SetMissmatch();
+		int[] result = obj.findErrorNums(arr);
+		System.out.println(Arrays.toString(result));
 	}
 
 	public int[] findErrorNums(int[] arr) {
