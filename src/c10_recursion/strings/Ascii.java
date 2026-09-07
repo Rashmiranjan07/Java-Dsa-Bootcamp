@@ -7,3 +7,4 @@ public class Ascii {
 	}
 
 }
+// if we add 0 with a char then we found the ASCII value of it 
