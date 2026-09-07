@@ -8,7 +8,8 @@ package c10_recursion.strings;
 
 public class SkipApple {
 	public static void main(String[] args) {
-
+		
+		System.out.println(skipAppNotApple("bacapplcdah"));
 	}
 
 	static String skipApple(String up) {
