@@ -1,6 +1,6 @@
 package c10_recursion.Backtracking;
 
-public class maze {
+public class Maze {
 	public static void main(String[] args) {
 		System.out.println(count(3, 3));
 	}
