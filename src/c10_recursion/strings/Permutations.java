@@ -4,7 +4,7 @@ package c10_recursion.strings;
 
 public class Permutations {
 	public static void main(String[] args) {
-
+		permutations("", "abc");
 	}
 
 	static void permutations(String p, String up) {
