@@ -19,37 +19,42 @@ Output: false
 
 package c05_arrays;
 
-import javax.swing.tree.TreeNode;
-
 public class SameTree {
-	public static void main(String[] args) {
-		 int val;
-		    TreeNode left;
-		    TreeNode right;
 
-		    TreeNode() {
-		    }
+	// TreeNode class
+	static class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
 
-		    TreeNode(int val) {
-		        this.val = val;
-		    }
+		TreeNode() {
+		}
 
-		    TreeNode(int val, TreeNode left, TreeNode right) {
-		        this.val = val;
-		        this.left = left;
-		        this.right = right;
-		    }
+		TreeNode(int val) {
+			this.val = val;
+		}
+
+		TreeNode(int val, TreeNode left, TreeNode right) {
+			this.val = val;
+			this.left = left;
+			this.right = right;
+		}
 	}
 
-	public boolean isSameTree(TreeNode p, TreeNode q) {
+	// Check if two trees are the same
+	public static boolean isSameTree(TreeNode p, TreeNode q) {
+
+		// Both nodes are null
 		if (p == null && q == null) {
 			return true;
 		}
 
+		// One node is null
 		if (p == null || q == null) {
 			return false;
 		}
 
+		// Values are different
 		if (p.val != q.val) {
 			return false;
 		}
@@ -58,4 +63,14 @@ public class SameTree {
 		return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 	}
 
+	public static void main(String[] args) {
+
+		// Tree p = [1,2,3]
+		TreeNode p = new TreeNode(1, new TreeNode(2), new TreeNode(3));
+
+		// Tree q = [1,2,3]
+		TreeNode q = new TreeNode(1, new TreeNode(2), new TreeNode(3));
+
+		System.out.println(isSameTree(p, q));
+	}
 }
