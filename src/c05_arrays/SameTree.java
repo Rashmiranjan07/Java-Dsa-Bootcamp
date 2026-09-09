@@ -19,9 +19,18 @@ Output: false
 
 package c05_arrays;
 
+import javax.swing.tree.TreeNode;
+
 public class SameTree {
 	public static void main(String[] args) {
-		
+		TreeNode p = { 1, 2, 3 };
+		TreeNode q = { 1, 2, 3 };
+	}
+
+	public boolean isSameTree(TreeNode p, TreeNode q) {
+		if (p == null && q == null) {
+			return true;
+		}
 	}
 
 }
