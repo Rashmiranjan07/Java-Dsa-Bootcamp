@@ -19,21 +19,32 @@ rotate 2 steps to the right: [3,99,-1,-100]
 
  */
 
-
 package c05_arrays;
 
 public class RotateArray {
 	public static void main(String[] args) {
-		int[] nums= {1,2,3,4,5,6,7};
-		int k=3; 
+		int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
+		int k = 3;
 
 	}
 
 	public void rotate(int[] nums, int k) {
-		
-		
-		
+		int n = 3;
 
+		for (int r = 1; r <= n; r++) {
+
+			int last = nums[nums.length - 1];
+
+			for (int i = nums.length - 1; i > 0; i--) {
+				nums[i] = nums[i - 1];
+			}
+
+			nums[0] = last;
+		}
+
+		for (int x : nums) {
+			System.out.print(x + " ");
+		}
 	}
 
 }
