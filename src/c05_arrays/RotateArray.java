@@ -25,13 +25,13 @@ public class RotateArray {
 	public static void main(String[] args) {
 		int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
 		int k = 3;
-
+		RotateArray obj = new RotateArray();
+		obj.rotate(nums, k);
 	}
 
 	public void rotate(int[] nums, int k) {
-		int n = 3;
 
-		for (int r = 1; r <= n; r++) {
+		for (int r = 1; r <= k; r++) {
 
 			int last = nums[nums.length - 1];
 
