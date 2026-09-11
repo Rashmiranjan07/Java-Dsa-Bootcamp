@@ -15,9 +15,15 @@ Output: [0]
 
 package c05_arrays;
 
+import java.util.Arrays;
+
 public class MoveZeros {
 	public static void main(String[] args) {
 		int[] nums = { 0, 1, 0, 3, 12 };
+		MoveZeros obj = new MoveZeros();
+		obj.moveZeroes(nums);
+		System.out.println(Arrays.toString(nums));
+
 	}
 
 	public void moveZeroes(int[] nums) {
