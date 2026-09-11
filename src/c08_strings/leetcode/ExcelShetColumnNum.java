@@ -35,7 +35,6 @@ public class ExcelShetColumnNum {
 		ExcelShetColumnNum obj = new ExcelShetColumnNum();
 		int result = obj.titleToNumber(columnTitle);
 		System.out.println(result);
-
 	}
 
 	public int titleToNumber(String columnTitle) {
