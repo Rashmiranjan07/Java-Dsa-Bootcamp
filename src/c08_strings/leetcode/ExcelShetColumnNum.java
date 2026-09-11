@@ -2,6 +2,10 @@ package c08_strings.leetcode;
 
 public class ExcelShetColumnNum {
 	public static void main(String[] args) {
+		String columnTitle = "A";
+		ExcelShetColumnNum obj = new ExcelShetColumnNum();
+		int result = obj.titleToNumber(columnTitle);
+		System.out.println(result);
 
 	}
 
