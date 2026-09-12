@@ -12,14 +12,19 @@ public class HexadecimalConversion {
 //		String hex = Integer.toHexString(num);
 //		return hex;
 
-		char[] hex = "0123456789ABCDEF".toCharArray();
+		char[] hex = "0123456789abcdef".toCharArray();
 		String result = "";
 
-		while (num > 0) {
-			int remainder = num % 16;
-			result = hex[remainder] + result;
-			num = num / 16;
+		if (num == 0) {
+			return "0";
 		}
+
+		while (num != 0) {
+			int remainder = num & 15;
+			result = hex[remainder] + result;
+			num = num >>> 4;
+		}
+
 		return result;
 	}
 
