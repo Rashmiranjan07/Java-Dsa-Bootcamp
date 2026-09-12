@@ -9,9 +9,18 @@ public class HexadecimalConversion {
 	}
 
 	public String toHex(int num) {
-		String hex = Integer.toHexString(num);
+//		String hex = Integer.toHexString(num);
+//		return hex;
 
-		return hex;
+		char[] hex = "0123456789ABCDEF".toCharArray();
+		String result = "";
+
+		while (num > 0) {
+			int remainder = num % 16;
+			result = hex[remainder] + result;
+			num = num / 16;
+		}
+		return result;
 	}
 
 }
