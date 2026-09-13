@@ -6,8 +6,6 @@ For example, shift('a') = 'b', shift('t') = 'u', and shift('z') = 'a'.
 Now for each shifts[i] = x, we want to shift the first i + 1 letters of s, x times.
 Return the final string after all such shifts to s are applied.
 
- 
-
 Example 1:
 
 Input: s = "abc", shifts = [3,5,9]
