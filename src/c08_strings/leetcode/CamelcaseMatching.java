@@ -23,8 +23,6 @@ Explanation: "FooBarTest" can be generated like this "Fo" + "o" + "Ba" + "r" + "
 
  */
 
-
-
 package c08_strings.leetcode;
 
 import java.util.ArrayList;
@@ -35,6 +33,8 @@ public class CamelcaseMatching {
 		String[] queries = { "FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack" };
 		String pattern = "FB";
 		CamelcaseMatching obj = new CamelcaseMatching();
+		List<Boolean> result = obj.camelMatch(queries, pattern);
+		System.out.println(result);
 	}
 
 	public List<Boolean> camelMatch(String[] queries, String pattern) {
