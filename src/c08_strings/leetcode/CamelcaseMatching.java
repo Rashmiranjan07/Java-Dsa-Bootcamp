@@ -34,6 +34,7 @@ public class CamelcaseMatching {
 	public static void main(String[] args) {
 		String[] queries = { "FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack" };
 		String pattern = "FB";
+		CamelcaseMatching obj = new CamelcaseMatching();
 	}
 
 	public List<Boolean> camelMatch(String[] queries, String pattern) {
