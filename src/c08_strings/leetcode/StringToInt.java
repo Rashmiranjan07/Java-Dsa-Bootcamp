@@ -62,8 +62,6 @@ Reading stops at the first non-digit character 'w'.
 
  */
 
-
-
 package c08_strings.leetcode;
 
 public class StringToInt {
@@ -72,7 +70,14 @@ public class StringToInt {
 	}
 
 	public int myAtoi(String s) {
+		int i = 0;
+		int sign = 1;
+		int result = 0;
 
+		// 1. Remove leading spaces
+		while (i < s.length() && s.charAt(i) == ' ') {
+			i++;
+		}
 	}
 
 }
