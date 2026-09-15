@@ -66,7 +66,10 @@ package c08_strings.leetcode;
 
 public class StringToInt {
 	public static void main(String[] args) {
-
+		String s = "-42";
+		StringToInt obj = new StringToInt();
+		int result = obj.myAtoi(s);
+		System.out.println(result);
 	}
 
 	public int myAtoi(String s) {
@@ -78,6 +81,23 @@ public class StringToInt {
 		while (i < s.length() && s.charAt(i) == ' ') {
 			i++;
 		}
-	}
 
+		// 2. Check sign
+		if (i < s.length() && s.charAt(i) == '-') {
+			sign = -1;
+			i++;
+		} else if (i < s.length() && s.charAt(i) == '+') {
+			sign = 1;
+			i++;
+		}
+
+		// 3. converts digits
+
+		while (i < s.length() && Character.isDigit(s.charAt(i))) {
+			int digit = s.charAt(i) - '0';
+			result = result * 10 + digit;
+			i++;
+		}
+		return result * sign;
+	}
 }
