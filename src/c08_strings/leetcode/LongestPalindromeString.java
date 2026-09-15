@@ -25,12 +25,11 @@ Output: "bb"
 
  */
 
-
 package c08_strings.leetcode;
 
 public class LongestPalindromeString {
 	public static void main(String[] args) {
-
+		String s = "babad";
 	}
 
 	public String longestPalindrome(String s) {
