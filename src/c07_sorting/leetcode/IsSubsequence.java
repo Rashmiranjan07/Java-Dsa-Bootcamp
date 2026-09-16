@@ -2,8 +2,11 @@ package c07_sorting.leetcode;
 
 public class IsSubsequence {
 	public static void main(String[] args) {
-		String s = "abc";
+		String s = "abx";
 		String t = "ahbgdc";
+		IsSubsequence obj = new IsSubsequence();
+		boolean result = obj.isSubsequence(s, t);
+		System.out.println(result);
 	}
 
 	public boolean isSubsequence(String s, String t) {
