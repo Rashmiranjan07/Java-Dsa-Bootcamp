@@ -2,10 +2,17 @@ package c05_arrays;
 
 public class MergeSortedArray {
 	public static void main(String[] args) {
-		int[] nums1= {1,2,3,0,0,0};
-		int [] nums2= {4,5,6};
-		int m=3;
-		int n=3;
+		int[] nums1 = { 1, 2, 3, 0, 0, 0 };
+		int[] nums2 = { 4, 5, 6 };
+		int m = 3;
+		int n = 3;
+		MergeSortedArray obj = new MergeSortedArray();
+		obj.merge(nums1, m, nums2, n);
+
+		// Print merged array
+		for (int num : nums1) {
+			System.out.print(num + " ");
+		}
 
 	}
 
