@@ -25,6 +25,7 @@ public class UniquePaths {
 		int m = 3;
 		int n = 7;
 		UniquePaths obj = new UniquePaths();
+		int result =obj.uniquePaths(m, n);
 
 	}
 
