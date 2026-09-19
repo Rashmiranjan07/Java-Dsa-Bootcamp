@@ -23,9 +23,6 @@ public class UglyNumber {
 		while (n % 5 == 0) {
 			n /= 5;
 		}
-
 		return n == 1;
-
 	}
-
 }
