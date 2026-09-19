@@ -20,6 +20,8 @@ public class UglyNumber {
 			n /= 5;
 		}
 
+		return n == 1;
+
 	}
 
 }
