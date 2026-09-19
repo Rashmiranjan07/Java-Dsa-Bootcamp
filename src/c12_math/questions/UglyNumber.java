@@ -6,8 +6,12 @@ public class UglyNumber {
 	}
 
 	public boolean isUgly(int n) {
-		if ( n<=0) {
+		if (n <= 0) {
 			return false;
+		}
+
+		while (n % 2 == 0) {
+			n /= 2;
 		}
 
 	}
