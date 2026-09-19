@@ -2,6 +2,10 @@ package c12_math.questions;
 
 public class UglyNumber {
 	public static void main(String[] args) {
+		int n = 6;
+		UglyNumber obj = new UglyNumber();
+		boolean result = obj.isUgly(n);
+		System.out.println(result);
 
 	}
 
