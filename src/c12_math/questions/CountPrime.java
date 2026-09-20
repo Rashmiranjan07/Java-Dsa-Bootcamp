@@ -45,33 +45,32 @@ public class CountPrime {
 //	        }
 //
 //	        return primeCount;
-		
-		// time limit exceed 
-		
-		
+
+		// time limit exceed
+
 		boolean[] isPrime = new boolean[n];
 
-	    for (int i = 2; i < n; i++) {
-	        isPrime[i] = true;
-	    }
+		for (int i = 2; i < n; i++) {
+			isPrime[i] = true;
+		}
 
-	    for (int i = 2; i * i < n; i++) {
-	        if (isPrime[i]) {
-	            for (int j = i * i; j < n; j += i) {
-	                isPrime[j] = false;
-	            }
-	        }
-	    }
+		for (int i = 2; i * i < n; i++) {
+			if (isPrime[i]) {
+				for (int j = i * i; j < n; j += i) {
+					isPrime[j] = false;
+				}
+			}
+		}
 
-	    int count = 0;
+		int count = 0;
 
-	    for (int i = 2; i < n; i++) {
-	        if (isPrime[i]) {
-	            count++;
-	        }
-	    }
+		for (int i = 2; i < n; i++) {
+			if (isPrime[i]) {
+				count++;
+			}
+		}
 
-	    return count;
+		return count;
 	}
 
 }
