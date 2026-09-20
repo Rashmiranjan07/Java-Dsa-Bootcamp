@@ -28,23 +28,50 @@ public class CountPrime {
 	}
 
 	public int countPrimes(int n) {
-		  int primeCount = 0;
+//		  int primeCount = 0;
+//
+//	        for (int num = 2; num < n; num++) {
+//	            int count = 0;
+//
+//	            for (int i = 1; i <= num; i++) {
+//	                if (num % i == 0) {
+//	                    count++;
+//	                }
+//	            }
+//
+//	            if (count == 2) {
+//	                primeCount++;
+//	            }
+//	        }
+//
+//	        return primeCount;
+		
+		// time limit exceed 
+		
+		
+		boolean[] isPrime = new boolean[n];
 
-	        for (int num = 2; num < n; num++) {
-	            int count = 0;
+	    for (int i = 2; i < n; i++) {
+	        isPrime[i] = true;
+	    }
 
-	            for (int i = 1; i <= num; i++) {
-	                if (num % i == 0) {
-	                    count++;
-	                }
-	            }
-
-	            if (count == 2) {
-	                primeCount++;
+	    for (int i = 2; i * i < n; i++) {
+	        if (isPrime[i]) {
+	            for (int j = i * i; j < n; j += i) {
+	                isPrime[j] = false;
 	            }
 	        }
+	    }
 
-	        return primeCount;
+	    int count = 0;
+
+	    for (int i = 2; i < n; i++) {
+	        if (isPrime[i]) {
+	            count++;
+	        }
+	    }
+
+	    return count;
 	}
 
 }
