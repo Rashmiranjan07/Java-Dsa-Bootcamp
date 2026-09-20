@@ -21,6 +21,9 @@ package c12_math.questions;
 public class CountPrime {
 	public static void main(String[] args) {
 		int n = 10;
+		CountPrime obj = new CountPrime();
+		int result = obj.countPrimes(n);
+		System.out.println(result);
 
 	}
 
@@ -28,6 +31,19 @@ public class CountPrime {
 		if (n < 1) {
 			return 0;
 		}
+		while (n > 0) {
+			int count = 0;
+			for (int i = 0; i < n; i++) {
+				if (n % i == 0) {
+					count++;
+				}
+			}
+			int maxCount = 0;
+			while (count <= 2) {
+				return maxCount++;
+			}
+		}
+		return -1;
 	}
 
 }
