@@ -28,22 +28,23 @@ public class CountPrime {
 	}
 
 	public int countPrimes(int n) {
-		if (n < 1) {
-			return 0;
-		}
-		while (n > 0) {
-			int count = 0;
-			for (int i = 0; i < n; i++) {
-				if (n % i == 0) {
-					count++;
-				}
-			}
-			int maxCount = 0;
-			while (count <= 2) {
-				return maxCount++;
-			}
-		}
-		return -1;
+		  int primeCount = 0;
+
+	        for (int num = 2; num < n; num++) {
+	            int count = 0;
+
+	            for (int i = 1; i <= num; i++) {
+	                if (num % i == 0) {
+	                    count++;
+	                }
+	            }
+
+	            if (count == 2) {
+	                primeCount++;
+	            }
+	        }
+
+	        return primeCount;
 	}
 
 }
