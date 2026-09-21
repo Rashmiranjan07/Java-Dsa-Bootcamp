@@ -22,7 +22,11 @@ package c12_math.questions;
 
 public class Base7 {
 	public static void main(String[] args) {
-		
+
+	}
+
+	public String convertToBase7(int num) {
+
 	}
 
 }
