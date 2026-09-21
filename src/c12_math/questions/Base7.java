@@ -27,13 +27,24 @@ public class Base7 {
 			return "0";
 		}
 
-		String ans = " ";
+		boolean negative = num < 0;
+
+		if (negative) {
+			num = -num;
+		}
+
+		String ans = "";
 
 		while (num > 0) {
-			int rem = num % 7;
-			ans = rem + ans;
+			int remainder = num % 7;
+			ans = remainder + ans;
 			num = num / 7;
 		}
+
+		if (negative) {
+			ans = "-" + ans;
+		}
+
 		return ans;
 	}
 
