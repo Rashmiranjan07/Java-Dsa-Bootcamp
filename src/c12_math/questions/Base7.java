@@ -23,6 +23,9 @@ package c12_math.questions;
 public class Base7 {
 	public static void main(String[] args) {
 		int num = 100;
+		Base7 obj = new Base7();
+		String result = obj.convertToBase7(num);
+		System.out.println(result.toString());
 	}
 
 	public String convertToBase7(int num) {
