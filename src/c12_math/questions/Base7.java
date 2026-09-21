@@ -22,11 +22,23 @@ package c12_math.questions;
 
 public class Base7 {
 	public static void main(String[] args) {
-
+		int num = 100;
 	}
 
 	public String convertToBase7(int num) {
 
+		if (num == 0) {
+			return "0";
+		}
+
+		String ans = " ";
+
+		while (num > 0) {
+			int rem = num % 7;
+			ans = rem + ans;
+			num = num / 7;
+		}
+		return ans;
 	}
 
 }
