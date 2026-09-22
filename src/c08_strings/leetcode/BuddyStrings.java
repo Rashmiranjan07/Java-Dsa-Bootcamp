@@ -33,23 +33,51 @@ public class BuddyStrings {
 	}
 
 	public boolean buddyStrings(String s, String goal) {
-		
+
 		// Different lengths -> impossible
-        if (s.length() != goal.length()) {
-            return false;
-        }
-        
+		if (s.length() != goal.length()) {
+			return false;
+		}
 		char[] arr = s.toCharArray();
 
-		char temp = arr[0];
-		arr[0] = arr[1];
-		arr[1] = temp;
+		int first = -1;
+		int second = -1;
 
-		s = new String(arr);
-		if (s == goal) {
-			return true;
+		// Find different characters
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) != goal.charAt(i)) {
+
+				if (first == -1) {
+					first = i;
+				} else if (second == -1) {
+					second = i;
+				} else {
+					return false;
+				}
+			}
 		}
-		return false;
+
+		// "aa" and "aa" case
+		if (first == -1) {
+			for (int i = 0; i < s.length() - 1; i++) {
+				if (s.charAt(i) == s.charAt(i + 1)) {
+					return true;
+				}
+			}
+			return false;
+		}
+
+		// Only one difference
+		if (second == -1) {
+			return false;
+		}
+
+		// Swap
+		char temp = arr[first];
+		arr[first] = arr[second];
+		arr[second] = temp;
+
+		return new String(arr).equals(goal);
 	}
 
 }
