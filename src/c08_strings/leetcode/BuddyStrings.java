@@ -27,9 +27,18 @@ public class BuddyStrings {
 	public static void main(String[] args) {
 		String s = "aa";
 		String goal = "aa";
+		BuddyStrings obj = new BuddyStrings();
+		boolean result = obj.buddyStrings(s, goal);
+		System.out.println(result);
 	}
 
 	public boolean buddyStrings(String s, String goal) {
+		
+		// Different lengths -> impossible
+        if (s.length() != goal.length()) {
+            return false;
+        }
+        
 		char[] arr = s.toCharArray();
 
 		char temp = arr[0];
