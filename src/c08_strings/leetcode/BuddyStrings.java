@@ -34,17 +34,16 @@ public class BuddyStrings {
 
 	public boolean buddyStrings(String s, String goal) {
 
-		// Different lengths -> impossible
 		if (s.length() != goal.length()) {
 			return false;
 		}
-		char[] arr = s.toCharArray();
 
+		// Find the different positions
 		int first = -1;
 		int second = -1;
 
-		// Find different characters
 		for (int i = 0; i < s.length(); i++) {
+
 			if (s.charAt(i) != goal.charAt(i)) {
 
 				if (first == -1) {
@@ -57,27 +56,28 @@ public class BuddyStrings {
 			}
 		}
 
-		// "aa" and "aa" case
+		// Strings are already same
 		if (first == -1) {
-			for (int i = 0; i < s.length() - 1; i++) {
-				if (s.charAt(i) == s.charAt(i + 1)) {
-					return true;
+
+			// Check if any character occurs twice
+			for (int i = 0; i < s.length(); i++) {
+				for (int j = i + 1; j < s.length(); j++) {
+
+					if (s.charAt(i) == s.charAt(j)) {
+						return true;
+					}
 				}
 			}
+
 			return false;
 		}
 
-		// Only one difference
+		// Only one different character
 		if (second == -1) {
 			return false;
 		}
 
-		// Swap
-		char temp = arr[first];
-		arr[first] = arr[second];
-		arr[second] = temp;
-
-		return new String(arr).equals(goal);
+		// Check whether swapping makes them equal
+		return s.charAt(first) == goal.charAt(second) && s.charAt(second) == goal.charAt(first);
 	}
-
 }
