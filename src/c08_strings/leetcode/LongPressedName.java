@@ -12,21 +12,47 @@ Example 2:
 Input: name = "saeed", typed = "ssaaedd"
 Output: false
 Explanation: 'e' must have been pressed twice, but it was not in the typed output.
- */
 
+ */
 
 package c08_strings.leetcode;
 
 public class LongPressedName {
-	public static void main(String[] args) {
-		String name="alex";
-		String typed ="aaleex";
 
+	public static void main(String[] args) {
+		String name = "alex";
+		String typed = "aaleex";
+
+		LongPressedName obj = new LongPressedName();
+
+		System.out.println(obj.isLongPressedName(name, typed));
 	}
 
 	public boolean isLongPressedName(String name, String typed) {
-		
 
+		int i = 0;
+		int j = 0;
+
+		while (j < typed.length()) {
+
+			// Current characters match
+			if (i < name.length() && name.charAt(i) == typed.charAt(j)) {
+				i++;
+				j++;
+			}
+
+			// Long pressed character
+			else if (j > 0 && typed.charAt(j) == typed.charAt(j - 1)) {
+				j++;
+			}
+
+			// Invalid character
+			else {
+				return false;
+			}
+		}
+
+		// All characters from name must be matched
+		return i == name.length();
 	}
-
 }
