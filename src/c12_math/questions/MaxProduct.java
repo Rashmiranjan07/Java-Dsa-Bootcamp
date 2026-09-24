@@ -31,8 +31,6 @@ The possible products of any two digits are: 1 * 2 = 2, 1 * 4 = 4, 2 * 4 = 8.
 The maximum product is 8.
  */
 
-
-
 package c12_math.questions;
 
 public class MaxProduct {
