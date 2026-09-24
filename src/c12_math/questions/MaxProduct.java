@@ -1,3 +1,38 @@
+/* 3536. Maximum Product of Two Digits (Easy)
+---------------------------------------------
+You are given a positive integer n.
+Return the maximum product of any two digits in n.
+Note: You may use the same digit twice if it appears more than once in n.
+
+Example 1:
+Input: n = 31
+Output: 3
+Explanation:
+
+The digits of n are [3, 1].
+The possible products of any two digits are: 3 * 1 = 3.
+The maximum product is 3.
+
+Example 2:
+Input: n = 22
+Output: 4
+Explanation:
+The digits of n are [2, 2].
+The possible products of any two digits are: 2 * 2 = 4.
+The maximum product is 4.
+
+Example 3:
+Input: n = 124
+Output: 8
+Explanation:
+
+The digits of n are [1, 2, 4].
+The possible products of any two digits are: 1 * 2 = 2, 1 * 4 = 4, 2 * 4 = 8.
+The maximum product is 8.
+ */
+
+
+
 package c12_math.questions;
 
 public class MaxProduct {
@@ -9,24 +44,23 @@ public class MaxProduct {
 	}
 
 	public int maxProduct(int n) {
-		String str = String.valueOf(n);
-		int[] arr = new int[str.length()];
+		int largest = 0;
+		int secondLargest = 0;
 
-		for (int i = 0; i < str.length(); i++) {
-			arr[i] = str.charAt(i) - '0';
-		}
+		while (n > 0) {
+			int digit = n % 10;
 
-		int max = 0;
-
-		for (int i = 0; i < arr.length - 1; i++) {
-			int product = arr[i] * arr[i + 1];
-
-			if (product > max) {
-				max = product;
+			if (digit > largest) {
+				secondLargest = largest;
+				largest = digit;
+			} else if (digit > secondLargest) {
+				secondLargest = digit;
 			}
+
+			n /= 10;
 		}
 
-		return max;
+		return largest * secondLargest;
 	}
 
 }
