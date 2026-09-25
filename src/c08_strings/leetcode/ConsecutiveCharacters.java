@@ -24,7 +24,5 @@ public class ConsecutiveCharacters {
 
 		}
 		return maxCount;
-
 	}
-
 }
