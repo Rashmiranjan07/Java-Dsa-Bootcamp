@@ -21,17 +21,21 @@ Explanation: It can be proved that no such integer exist.
 
  */
 
-
 package c12_math.questions;
 
 public class FindPivot {
 	public static void main(String[] args) {
-
+		int n = 8;
 	}
 
 	public int pivotInteger(int n) {
-		
-	
+		int sum = n * (n / 2);
+		int pivot = (int) Math.sqrt(sum);
+
+		if (pivot * pivot == sum) {
+			return pivot;
+		}
+		return -1;
 
 	}
 
