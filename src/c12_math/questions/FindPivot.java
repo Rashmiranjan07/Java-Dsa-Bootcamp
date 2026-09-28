@@ -26,17 +26,19 @@ package c12_math.questions;
 public class FindPivot {
 	public static void main(String[] args) {
 		int n = 8;
+		FindPivot obj = new FindPivot();
+		int result = obj.pivotInteger(n);
+		System.out.println(result);
 	}
 
 	public int pivotInteger(int n) {
-		int sum = n * (n / 2);
+		int sum = n * (n+1)/2;
 		int pivot = (int) Math.sqrt(sum);
 
 		if (pivot * pivot == sum) {
 			return pivot;
 		}
 		return -1;
-
 	}
 
 }
