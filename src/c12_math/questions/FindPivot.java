@@ -6,6 +6,7 @@ public class FindPivot {
 	}
 
 	public int pivotInteger(int n) {
+		return n;
 
 	}
 
