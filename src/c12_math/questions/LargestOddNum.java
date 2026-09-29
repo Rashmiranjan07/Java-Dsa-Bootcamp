@@ -25,7 +25,7 @@ package c12_math.questions;
 
 public class LargestOddNum {
 	public static void main(String[] args) {
-
+		String num=
 	}
 
 	public String largestOddNumber(String num) {
