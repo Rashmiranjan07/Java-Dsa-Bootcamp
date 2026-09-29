@@ -25,7 +25,9 @@ package c12_math.questions;
 public class LargestOddNum {
 	public static void main(String[] args) {
 		String num="35427";
-		
+		LargestOddNum obj = new LargestOddNum();
+		string result = obj.largestOddNumber(num);
+		System.out.println(result);
 	}
 
 	public String largestOddNumber(String num) {
