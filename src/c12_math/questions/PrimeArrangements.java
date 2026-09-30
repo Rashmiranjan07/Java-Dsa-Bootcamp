@@ -9,37 +9,53 @@ public class PrimeArrangements {
 
 	}
 
+	static final long MOD = 1_000_000_007;
+
 	public int numPrimeArrangements(int n) {
+
 		int primeCount = 0;
 		int nonPrimeCount = 0;
+
 		for (int i = 1; i <= n; i++) {
+
 			if (isPrime(i)) {
 				primeCount++;
 			} else {
 				nonPrimeCount++;
 			}
 		}
-		int ans = fact(primeCount) * fact(nonPrimeCount);
-		return ans;
+
+		long ans = fact(primeCount) * fact(nonPrimeCount);
+
+		ans = ans % MOD;
+
+		return (int) ans;
 	}
 
-	static int fact(int n) {
-		int pro = 1;
+	static long fact(int n) {
+
+		long pro = 1;
+
 		for (int i = 1; i <= n; i++) {
-			pro = pro * i;
+			pro = (pro * i) % MOD;
 		}
+
 		return pro;
 	}
 
 	static boolean isPrime(int n) {
+
 		if (n < 2) {
 			return false;
 		}
+
 		for (int i = 2; i * i <= n; i++) {
+
 			if (n % i == 0) {
 				return false;
 			}
 		}
+
 		return true;
 	}
 }
