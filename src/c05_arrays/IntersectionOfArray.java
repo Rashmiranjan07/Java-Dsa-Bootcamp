@@ -8,6 +8,19 @@ public class IntersectionOfArray {
 
 	public int[] intersect(int[] nums1, int[] nums2) {
 
+		List<Integer> result = new ArrayList<>();
+
+		for (int num2 : nums2) {
+			for (int num1 : nums1) {
+				if (num2 == num1) {
+					result.add(num2);
+					break;
+				}
+			}
+		}
+
+		return result;
+
 	}
 
 }
