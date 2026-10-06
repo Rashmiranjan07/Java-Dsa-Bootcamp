@@ -1,7 +1,10 @@
 package c05_arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class IntersectionOfArray {
 
@@ -11,36 +14,26 @@ public class IntersectionOfArray {
 		int[] nums2 = { 2, 2 };
 
 		IntersectionOfArray obj = new IntersectionOfArray();
-
 		int[] result = obj.intersect(nums1, nums2);
-
-		for (int num : result) {
-			System.out.print(num + " ");
-		}
+		System.out.println(Arrays.toString(result));
 	}
 
 	public int[] intersect(int[] nums1, int[] nums2) {
 
-		List<Integer> result = new ArrayList<>();
+		Map<Integer, Integer> map = new HashMap<>();
+		List<Integer> list = new ArrayList<>();
 
-		for (int num2 : nums2) {
+		for (int n : nums1) {
+			map.put(n, map.getOrDefault(n, 0) + 1);
+		}
 
-			for (int num1 : nums1) {
-
-				if (num2 == num1) {
-					result.add(num2);
-					break;
-				}
+		for (int n : nums2) {
+			if (map.getOrDefault(n, 0) > 0) {
+				list.add(n);
+				map.put(n, map.get(n) - 1);
 			}
 		}
 
-		// Convert List<Integer> to int[]
-		int[] output = new int[result.size()];
-
-		for (int i = 0; i < result.size(); i++) {
-			output[i] = result.get(i);
-		}
-
-		return output;
+		return list.stream().mapToInt(Integer::intValue).toArray();
 	}
 }
