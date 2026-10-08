@@ -9,6 +9,11 @@ public class LL {
 	public LL() {
 		this.size = 0;
 	}
+	
+	public void insertFirst(int val) {
+		Node node=new Node(val);
+		node.next=head;
+	}
 
 	private class Node {
 		private int value;
