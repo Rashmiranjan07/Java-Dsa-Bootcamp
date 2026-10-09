@@ -2,8 +2,9 @@ package c05_arrays;
 
 public class RemoveDuplicateInSortedArray {
 	public static void main(String[] args) {
+		int[] nums = { 0, 0, 1, 1, 1, 1, 2, 3, 3 };
 		RemoveDuplicateInSortedArray obj = new RemoveDuplicateInSortedArray();
-		
+		int result = obj.removeDuplicates(nums);
 
 	}
 
