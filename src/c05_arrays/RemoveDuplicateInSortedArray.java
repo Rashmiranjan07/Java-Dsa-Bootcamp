@@ -5,7 +5,7 @@ public class RemoveDuplicateInSortedArray {
 		int[] nums = { 0, 0, 1, 1, 1, 1, 2, 3, 3 };
 		RemoveDuplicateInSortedArray obj = new RemoveDuplicateInSortedArray();
 		int result = obj.removeDuplicates(nums);
-
+		System.out.println(result);
 	}
 
 	public int removeDuplicates(int[] nums) {
