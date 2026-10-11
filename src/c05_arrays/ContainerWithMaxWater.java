@@ -12,6 +12,10 @@ public class ContainerWithMaxWater {
 		int maxArea = 0;
 
 		while (left < right) {
+			int width = right - left;
+
+			// The shorter line determines the water height
+			int h = Math.min(height[left], height[right]);
 
 		}
 
