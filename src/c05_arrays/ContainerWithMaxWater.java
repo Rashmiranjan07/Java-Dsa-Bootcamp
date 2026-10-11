@@ -11,6 +11,10 @@ public class ContainerWithMaxWater {
 
 		int maxArea = 0;
 
+		while (left < right) {
+
+		}
+
 	}
 
 }
