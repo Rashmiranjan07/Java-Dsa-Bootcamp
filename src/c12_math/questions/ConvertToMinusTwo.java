@@ -3,6 +3,9 @@ package c12_math.questions;
 public class ConvertToMinusTwo {
 	public static void main(String[] args) {
 		int n = 3;
+		ConvertToMinusTwo obj = new ConvertToMinusTwo();
+		String result = obj.baseNeg2(n);
+		System.out.println(result);
 	}
 
 	public String baseNeg2(int n) {
