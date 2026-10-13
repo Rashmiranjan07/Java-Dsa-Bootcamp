@@ -12,8 +12,8 @@ Example 2:
 Input: n = 3
 Output: "111"
 Explantion: (-2)2 + (-2)1 + (-2)0 = 3
-Example 3:
 
+Example 3:
 Input: n = 4
 Output: "100"
 Explantion: (-2)2 = 4
