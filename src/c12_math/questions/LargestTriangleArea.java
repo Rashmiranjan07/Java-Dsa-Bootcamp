@@ -2,7 +2,7 @@ package c12_math.questions;
 
 public class LargestTriangleArea {
 	public static void main(String[] args) {
-
+		int [][]= {{0,0},{0,1},{1,0},{0,2},{2,0}};
 	}
 
 	public double largestTriangleArea(int[][] points) {
