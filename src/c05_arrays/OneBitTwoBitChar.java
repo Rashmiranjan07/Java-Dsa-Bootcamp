@@ -2,8 +2,10 @@ package c05_arrays;
 
 public class OneBitTwoBitChar {
 	public static void main(String[] args) {
-		int[] bits= {1,1,1,0};
-		OneBitTwoBitChar obj 
+		int[] bits = { 1, 1, 1, 0 };
+		OneBitTwoBitChar obj = new OneBitTwoBitChar();
+		boolean result = obj.isOneBitCharacter(bits);
+		System.out.println(result);
 	}
 
 	public boolean isOneBitCharacter(int[] bits) {
