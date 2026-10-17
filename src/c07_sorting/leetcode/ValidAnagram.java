@@ -3,7 +3,7 @@
 Given two strings s and t, return true if t is an anagram of s, and false otherwise.
 
 Example 1:
-Input: s = "rat", t = "car"
+Input: s = "anagram", t = "car"
 Output: true
 
 Example 2:
