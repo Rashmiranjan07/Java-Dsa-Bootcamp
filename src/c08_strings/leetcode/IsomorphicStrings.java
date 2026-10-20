@@ -4,6 +4,9 @@ public class IsomorphicStrings {
 	public static void main(String[] args) {
 		String s="egg";
 		String t="add";
+		IsomorphicStrings obj = new IsomorphicStrings();
+		boolean result=obj.isIsomorphic(s, t);
+		System.out.println(result);
 
 	}
 
