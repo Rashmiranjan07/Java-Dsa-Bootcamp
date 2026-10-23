@@ -13,7 +13,7 @@ Example 2:
 Input: s = "", t = "y"
 Output: "y"
 
- */
+*/
 
 
 package c08_strings.leetcode;
