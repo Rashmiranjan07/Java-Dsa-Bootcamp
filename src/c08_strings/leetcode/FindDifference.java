@@ -13,8 +13,6 @@ Example 2:
 Input: s = "", t = "y"
 Output: "y"
 
-
-
  */
 
 
